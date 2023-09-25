@@ -1,0 +1,178 @@
+html,
+body,
+pre,
+button,
+select,
+textarea,
+[type='button'],
+[type='submit'],
+[type='text'],
+[type='password'],
+[type='search'],
+[type='email'],
+[type='url'],
+[type='number'],
+[type='tel'],
+[type='file'],
+[type='date'],
+[type='time'] {
+  color: #000;
+}
+
+body {
+  background-color: transparent;
+}
+
+/* document */
+.document {
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+/* document--cover */
+.document--cover {
+  padding: 90px 60px;
+}
+
+/* document-cover-head */
+.document-cover-head {
+  padding-top: 100px;
+  margin-bottom: 438px;
+}
+.document-cover-head__logo {
+  height: 28px;
+  background: url('../images/pdf/logo.png') no-repeat 0 50%;
+  background-size: auto 100%;
+}
+.document-cover-head__hr {
+  margin: 30px 0;
+  width: 30px;
+  height: 4px;
+  background-color: #6e3ef5;
+}
+.document-cover-head__title {
+  margin: 0;
+  font-size: 48px;
+  line-height: 65px;
+}
+.document-cover-head__url {
+  margin: 30px 0 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: #666982;
+}
+.document-cover__bi {
+  margin: 40px 0 0;
+  height: 24px;
+  background: url('../images/pdf/logo-skt.png') no-repeat 50% 50%;
+  background-size: auto 100%;
+}
+
+/* color */
+.document .color-primary {
+  color: #000;
+}
+
+/* info-list */
+.document .info-list__key {
+  color: #666982;
+}
+.document .info-list__key::before {
+  border-color: #782eff;
+}
+
+/* info-list--report */
+.document .info-list--report {
+  display: block;
+  padding: 29px;
+  border-width: 1px;
+  border-color: #cdd4db;
+}
+.document .info-list--report::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.document .info-list--report .info-list__item {
+  float: left;
+  width: 50%;
+}
+.document .info-list--report .info-list__item + .info-list__item + .info-list__item {
+  margin-top: 30px;
+}
+.document .info-list--report .info-list__key {
+  padding-right: 8px;
+}
+
+/* billing-info */
+.document .billing-info {
+  border-radius: 0;
+  border: 1px solid #cdd4db;
+  background-color: transparent;
+}
+.document .billing-info__head {
+  padding: 20px 20px 20px 90px;
+  background-position: 20px 50%;
+}
+.document .billing-info__contents--console-report {
+  padding: 0 20px;
+  background-color: transparent;
+}
+.document .billing-info__item:last-child .billing-info__layer,
+.document .billing-info__item:last-child .billing-info__contents {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.document .billing-info__contents--console-report .console-report-view {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.document .billing-info__head--console-report {
+  background-image: url('../images/pdf/image.png');
+  background-size: 48px 48px;
+}
+
+/* console-report-view */
+.document .console-report-view__item {
+  border-width: 1px;
+}
+.document .console-report-view__num {
+  margin-top: -12px;
+  margin-left: -12px;
+  color: #fff;
+  font-size: 11px;
+  line-height: 15px;
+  padding: 5px;
+  min-width: 25px;
+}
+
+/* form-section--console-report */
+.document .form-section--console-report {
+  padding: 30px 0;
+}
+.document .form-section--console-report + .form-section--console-report {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* report-progress */
+.document .report-progress__bar {
+  background-color: #e5e5e5;
+}
+
+/* code */
+.document .code {
+  background-color: #f2f2f2;
+}
+.document .code__text {
+  color: #782eff;
+}
+
+/* basic-list */
+.document .basic-list__item {
+  color: #000;
+}

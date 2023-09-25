@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="890">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_10143" data-name="사각형 10143" transform="translate(960 3051)" style="stroke:#707070;fill:#fff" d="M0 0h768v890H0z"/>
+        </clipPath>
+        <style>
+            .cls-4{fill:#fff;opacity:.02}
+        </style>
+    </defs>
+    <g id="마스크_그룹_29" data-name="마스크 그룹 29" transform="translate(-960 -3051)" style="clip-path:url(#clip-path)">
+        <g id="그룹_6291" data-name="그룹 6291" transform="translate(880 3051)">
+            <g id="그룹_2241" data-name="그룹 2241">
+                <ellipse id="타원_65" data-name="타원 65" class="cls-4" cx="138.5" cy="155.863" rx="138.5" ry="155.863" transform="translate(0 508.249)"/>
+                <ellipse id="타원_64" data-name="타원 64" class="cls-4" cx="138.5" cy="156.992" rx="138.5" ry="156.992" transform="translate(0 669.759)"/>
+                <ellipse id="타원_62" data-name="타원 62" class="cls-4" cx="108" cy="121.98" rx="108" ry="121.98" transform="translate(692 2.259)"/>
+                <ellipse id="타원_63" data-name="타원 63" class="cls-4" cx="108" cy="121.98" rx="108" ry="121.98" transform="translate(692 124.239)"/>
+            </g>
+        </g>
+    </g>
+</svg>

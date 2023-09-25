@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="324" height="200">
+    <defs>
+        <linearGradient id="linear-gradient" y1=".5" x2="1" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff" stop-opacity=".6"/>
+            <stop offset="1" stop-color="#fff" stop-opacity=".302"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#4c64db"/>
+            <stop offset="1" stop-color="#142792"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#3248ba"/>
+            <stop offset="1" stop-color="#142792"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-7" y1=".5" x2="1" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#05c3a7"/>
+            <stop offset="1" stop-color="#9fefe3"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-9" x1=".439" y1=".083" x2=".727" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#79e2fd"/>
+            <stop offset="1" stop-color="#5470f8"/>
+        </linearGradient>
+        <style>
+            .cls-4{fill:#fff}.cls-3{fill:url(#linear-gradient)}.cls-5{fill:url(#linear-gradient-3)}.cls-6{fill:url(#linear-gradient-4)}.cls-7{fill:url(#linear-gradient-7)}.cls-9{fill:#ffc87f}.cls-10{fill:#79e2fd}.cls-14{fill:none}.cls-13{stroke:none}
+        </style>
+    </defs>
+    <g id="img_signup_congratulation" transform="translate(-798 -492)">
+        <g id="그룹_2912" data-name="그룹 2912" transform="translate(874 505.5)">
+            <g id="그룹_2911" data-name="그룹 2911">
+                <g id="사각형_7489" data-name="사각형 7489" transform="translate(46)" style="stroke-width:4px;stroke-linejoin:round;fill:#5470f8;stroke:#1531d8">
+                    <rect class="cls-13" width="109.5" height="173.501" rx="8"/>
+                    <rect class="cls-14" x="2" y="2" width="105.5" height="169.501" rx="6"/>
+                </g>
+                <rect id="사각형_7501" data-name="사각형 7501" class="cls-3" width="76" height="8" rx="4" transform="translate(62.5 19)"/>
+                <rect id="사각형_7502" data-name="사각형 7502" class="cls-3" width="60" height="8" rx="4" transform="translate(62.672 38.883)"/>
+                <path id="사각형_7490" data-name="사각형 7490" class="cls-4" d="M16 0h76v139H0V16A16 16 0 0 1 16 0z" transform="translate(0 34.501)"/>
+                <path id="사각형_7494" data-name="사각형 7494" class="cls-5" d="M23.5 0A23.5 23.5 0 0 1 47 23.5V99H0V23.5A23.5 23.5 0 0 1 23.5 0z" transform="translate(82.62 74.501)"/>
+                <path id="사각형_7493" data-name="사각형 7493" class="cls-6" d="M10 0a10 10 0 0 1 10 10v89H0V10A10 10 0 0 1 10 0z" transform="translate(82.695 34.767)"/>
+                <path id="사각형_7497" data-name="사각형 7497" class="cls-6" d="M0 0h20v39A20 20 0 0 1 0 59V0z" transform="translate(102.622 74.674)"/>
+                <path id="사각형_7495" data-name="사각형 7495" class="cls-4" d="M0 0h15v51.5A7.5 7.5 0 0 1 7.5 59 7.5 7.5 0 0 1 0 51.5V0z" transform="translate(102.635 74.674)"/>
+                <path id="사각형_7498" data-name="사각형 7498" class="cls-4" d="M0 0h8a8 8 0 0 1 8 8v43a8 8 0 0 1-8 8 8 8 0 0 1-8-8V0z" transform="translate(117.5 74.674)"/>
+                <path id="사각형_7496" data-name="사각형 7496" class="cls-5" d="M8 0a8 8 0 0 1 8 8v91H0V8a8 8 0 0 1 8-8z" transform="translate(117.5 74.501)"/>
+                <rect id="사각형_7499" data-name="사각형 7499" class="cls-7" width="52" height="8" rx="4" transform="translate(17 124.624)"/>
+                <rect id="사각형_7500" data-name="사각형 7500" class="cls-7" width="40" height="8" rx="4" transform="translate(17 140.501)"/>
+                <path id="합치기_1" data-name="합치기 1" d="M0 38.143C0 30.336 9.85 24 22 24s22 6.334 22 14.141C44 42.049 33 44 22 44S0 42.049 0 38.143zM12 10a10 10 0 1 1 10 10 10 10 0 0 1-10-10z" transform="translate(21.001 64.748)" style="fill:url(#linear-gradient-9)"/>
+            </g>
+        </g>
+        <path id="사각형_10158" data-name="사각형 10158" class="cls-9" transform="rotate(-33 1255.097 -1094.01)" d="M0 0h10.08v24.48H0z"/>
+        <path id="사각형_10162" data-name="사각형 10162" class="cls-4" transform="rotate(139 426.66 550.515)" d="M0 0h7v17H0z"/>
+        <path id="사각형_10159" data-name="사각형 10159" class="cls-10" transform="rotate(11 -2455.7 4620.983)" d="M0 0h5.493v13.733H0z"/>
+        <path id="사각형_10163" data-name="사각형 10163" class="cls-9" transform="rotate(175 520.288 359.712)" d="M0 0h4.477v11.193H0z"/>
+        <path id="사각형_10161" data-name="사각형 10161" class="cls-10" transform="rotate(33 -425.824 2168.023)" d="M0 0h8v20H0z"/>
+        <g id="그룹_6306" data-name="그룹 6306" transform="translate(-6 2)">
+            <g id="타원_921" data-name="타원 921" transform="translate(1006 490)" style="fill:#05c3a7;stroke:#00a597;stroke-width:4px">
+                <circle class="cls-13" cx="24" cy="24" r="24"/>
+                <circle class="cls-14" cx="24" cy="24" r="22"/>
+            </g>
+            <g id="그룹_2914" data-name="그룹 2914" transform="translate(1021.5 508.5)">
+                <path id="패스_2510" data-name="패스 2510" d="m-22194.01-19969.215 7.158 6.707 10.842-12" transform="translate(22194.01 19974.508)" style="stroke:#fff;stroke-linecap:round;fill:none;stroke-width:4px;stroke-linejoin:round"/>
+            </g>
+        </g>
+    </g>
+</svg>

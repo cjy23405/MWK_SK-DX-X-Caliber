@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-clause">약관 팝업</a>
+
+    <!-- layer: 약관 팝업 -->
+    <div class="layer-wrap layer-wrap--primary layer-clause" data-layer="layer-clause">
+      <div class="layer-container">
+        <section class="ui-layer">
+          <div class="ui-layer__head">
+            <div class="ui-layer-header">
+              <div class="ui-layer-header__right">
+                <button type="button" class="ui-button ui-layer-header__btn ui-layer-header__btn--close" data-role="layerClose">
+                  <span class="for-a11y">close</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="sign-head">
+                <h2 class="sign-head__title">Terms of Service</h2>
+              </div>
+
+              <div class="ui-dropdown js-ui-dropdown">
+                <div class="ui-dropdown__head">
+                  <div class="ui-dropdown__text">2021.07.18~Until now</div>
+                  <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                    <span class="for-a11y">
+                      menu
+                      <span class="open-text">open</span>
+                      <span class="close-text">close</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                  <div class="ui-dropdown__contents">
+                    <ul class="ui-dropdown__list">
+                      <li class="ui-dropdown__item">
+                        <button type="button" class="ui-button ui-dropdown__link js-ui-dropdown__closer">2021.07.18~Until now</button>
+                      </li>
+                      <li class="ui-dropdown__item">
+                        <button type="button" class="ui-button ui-dropdown__link js-ui-dropdown__closer">link 2</button>
+                      </li>
+                      <li class="ui-dropdown__item">
+                        <button type="button" class="ui-button ui-dropdown__link js-ui-dropdown__closer">link 3</button>
+                      </li>
+                      <li class="ui-dropdown__item">
+                        <button type="button" class="ui-button ui-dropdown__link js-ui-dropdown__closer">link 4</button>
+                      </li>
+                      <li class="ui-dropdown__item">
+                        <button type="button" class="ui-button ui-dropdown__link js-ui-dropdown__closer">link 5</button>
+                      </li>
+                      <li class="ui-dropdown__item">
+                        <button type="button" class="ui-button ui-dropdown__link js-ui-dropdown__closer">link 6</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2021.11.01 : del : iframe으로 변경으로 제거
+              <section class="clause-contents">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+                Morbi fermentum turpis posuere, consequat orci sed, aliquam neque. Aenean orci mauris, feugiat ac mi at, tincidunt egestas est.<br />
+                Quisque laoreet urna nec ligula volutpat, vulputate auctor libero dignissim.<br />
+                Curabitur vulputate purus eu enim molestie dignissim.<br />
+                Suspendisse potenti. Phasellus et commodo ante.<br />
+                Suspendisse id hendrerit nunc, eget ullamcorper odio.<br />
+                Nunc mollis fringilla porttitor.<br />
+                Duis quis sagittis massa.<br />
+                In tincidunt ultricies pretium.<br />
+                Vestibulum a ante pellentesque, pulvinar tellus vel, semper tellus.<br />
+                Vivamus fermentum eleifend eleifend.<br />
+                Integer et risus laoreet libero sagittis semper.
+              </section>
+              -->
+              <!-- 2021.11.01 : add : iframe으로 변경 -->
+              <div class="clause-iframe">
+                <iframe src="./terms/광고성_정보_수신_동의(선택동의)/2021-11-15.html" frameborder="0"></iframe>
+              </div>
+              <!-- //2021.11.01 : add : iframe으로 변경 -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: 약관 팝업 -->
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다.
+      $(function () {
+        uiJSLayer.open('layer-clause');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

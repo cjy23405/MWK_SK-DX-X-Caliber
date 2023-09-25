@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <defs>
+        <linearGradient id="a" x1=".052" y1=".875" x2="1" y2=".069" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0099f8"/>
+            <stop offset="1" stop-color="#05c3a7"/>
+        </linearGradient>
+    </defs>
+    <g data-name="그룹 2887" transform="translate(-717 -1079)">
+        <rect data-name="사각형 7480" width="48" height="32" rx="4" transform="translate(717 1087)" style="fill:url(#a)"/>
+        <rect data-name="사각형 7479" width="10" height="2" rx="1" transform="translate(749 1111)" style="fill:#dff7f4"/>
+        <rect data-name="사각형 7478" width="8" height="6" rx="2" transform="translate(723 1093)" style="fill:#f0dbac"/>
+    </g>
+</svg>

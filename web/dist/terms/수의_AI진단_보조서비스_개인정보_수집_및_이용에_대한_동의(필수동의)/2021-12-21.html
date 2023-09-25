@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>X Caliber</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- style -->
+    <!-- <link type="text/css" rel="stylesheet" href="../../assets/css/common.css" /> -->
+    <!-- <link type="text/css" rel="stylesheet" href="../../assets/css/terms.css" /> -->
+    <!-- //style -->
+    <style>
+      body {
+        margin: 0;
+        font-size: 14px;
+        line-height: 19px;
+        color: #fff;
+        background-color: #01082b;
+        font-family: 'OpenSans', 'Noto Sans Korean', '맑은고딕', 'Malgun Gothic', '돋움', Dotum, 'Apple Gothic', sans-serif;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+      }
+
+      /* first/last */
+      .terms-text:first-child,
+      .terms-table:first-child,
+      .terms-list:first-child {
+        margin-top: 0;
+      }
+      .terms-text:last-child,
+      .terms-table:last-child,
+      .terms-list:last-child {
+        margin-bottom: 0;
+      }
+
+      /* terms-text */
+      .terms-text {
+        margin: 30px 0;
+      }
+
+      /* terms-table */
+      .terms-table {
+        margin: 30px 0;
+        font-size: 0;
+        line-height: 0;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .terms-table__inner {
+        min-width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        border-top: 2px solid #4e536b;
+        font-size: 14px;
+        line-height: 19px;
+      }
+      .terms-table__inner > table {
+        width: 100%;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        box-sizing: border-box;
+      }
+      .terms-table__inner > table > thead > tr > th,
+      .terms-table__inner > table > tbody > tr > th,
+      .terms-table__inner > table > tbody > tr > td {
+        box-sizing: border-box;
+        text-align: left;
+        vertical-align: middle;
+        padding: 16px 14px;
+        word-break: break-all;
+        border-bottom: 1px solid #2a304d;
+      }
+      .terms-table__inner > table > thead > tr > th + th,
+      .terms-table__inner > table > tbody > tr > th + th,
+      .terms-table__inner > table > tbody > tr > th + td,
+      .terms-table__inner > table > tbody > tr > td + td,
+      .terms-table__inner > table > tbody > tr > td + th {
+        border-left: 1px solid #2a304d;
+      }
+      .terms-table__inner > table > thead > tr > th {
+        color: #a0a5b9;
+      }
+      .terms-table__list {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      /* terms-list */
+      .terms-list {
+        margin: 30px 0;
+        padding: 0;
+        list-style: none;
+      }
+      .terms-list__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      .terms-list__item + .terms-list__item {
+        margin-top: 16px;
+      }
+      .terms-list__symbol {
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+        margin-right: 6px;
+      }
+      .terms-list__text {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        min-width: 0;
+      }
+
+      /* terms-link */
+      .terms-link {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      /* terms-title */
+      .terms-subtitle {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="terms-text">
+      수의AI진단보조서비스와 관련하여, 본인은 동의내용을 숙지하였으며, 이에 따라 본인의 개인정보를 귀사(SK텔레콤주식회사)가 수집 및 이용하는 것에 대해
+      동의합니다.
+    </p>
+
+    <h4 class="terms-subtitle">1. 개인정보의 수집∙이용 목적</h4>
+    <ul class="terms-list">
+      <li class="terms-list__item">
+        <div class="terms-list__symbol">(1)</div>
+        <div class="terms-list__text">회원관리: 수의AI진단보조서비스 부정 사용 내용 적발</div>
+      </li>
+      <li class="terms-list__item">
+        <div class="terms-list__symbol">(2)</div>
+        <div class="terms-list__text">서비스 이용요금 미납 시 채권 추심 절차 진행</div>
+      </li>
+    </ul>
+    <h4 class="terms-subtitle">2. 수집하는 개인정보의 항목</h4>
+    <div class="terms-table" style="width: 25%">
+      <div class="terms-table__inner">
+        <table>
+          <thead>
+            <tr>
+              <th>수집 내역</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>이름</td>
+            </tr>
+            <tr>
+              <td>소속</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h4 class="terms-subtitle">3. 개인정보의 보유 및 이용 기간</h4>
+    <ul class="terms-list">
+      <li class="terms-list__item">
+        <div class="terms-list__symbol">-</div>
+        <div class="terms-list__text">
+          개인정보는 본 AI서비스를 제공하는 기간 동안에 보유 및 이용되고, 이용자의 회원탈퇴 시 해당인의 개인정보가 열람 또는 이용될 수 없도록 파기
+          처리함. 단, 법령에서 따로 정하는 경우에는 해당 기간까지 보유
+        </div>
+      </li>
+    </ul>
+    <h4 class="terms-subtitle">
+      4. 본 동의는 수의AI진단보조서비스의 본질적 기능 제공을 위한 개인정보 수집/이용에 대한 동의로서, 동의를 하는 경우에만 수의AI진단보조서비스 이용이
+      가능합니다.
+    </h4>
+    <h4 class="terms-subtitle">
+      5. 법령에 따른 개인정보의 수집/이용, 계약의 이행/편익제공을 위한 개인정보 처리위탁 및 개인정보 처리와 관련된 일반 사항은 서비스의 개인정보
+      처리방침에 따릅니다.
+    </h4>
+  </body>
+</html>

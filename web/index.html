@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title></title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./dist/assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./dist/assets/css/common.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+      .is-emphasis {
+        font-weight: 700;
+        color: #ff706e;
+      }
+      .index-wrap {
+        box-sizing: border-box;
+        min-width: 1900px;
+        padding: 20px;
+      }
+      .index-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 0 20px;
+      }
+      .index-links:before {
+        content: '';
+        display: table;
+      }
+      .index-links__inner {
+        margin: -10px 0 0 -10px;
+      }
+      .index-links__inner:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .index-links a {
+        display: block;
+        margin: 10px 0 0 10px;
+        float: left;
+        padding: 5px 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        background: #666;
+      }
+      .index-gnb {
+        margin: 20px 0;
+      }
+      .index-bottom {
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-width: 1900px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background: rgba(0, 0, 0, 0.4);
+      }
+      .index-bottom a {
+        background-color: #066cb3;
+      }
+      .index-section + .index-section {
+        margin-top: 20px;
+      }
+      .index-section--clicked {
+        border-radius: 5px;
+        -webkit-animation: index-section-clicked 0.8s linear;
+        animation: index-section-clicked 0.8s linear;
+      }
+      @-webkit-keyframes index-section-clicked {
+        0% {
+          background-color: rgba(255, 202, 222, 0);
+        }
+        30% {
+          background-color: rgba(255, 202, 222, 0.3);
+        }
+        70% {
+          background-color: rgba(255, 202, 222, 0.3);
+        }
+        100% {
+          background-color: rgba(255, 202, 222, 0);
+        }
+      }
+      @keyframes index-section-clicked {
+        0% {
+          background-color: rgba(255, 202, 222, 0);
+        }
+        30% {
+          background-color: rgba(255, 202, 222, 0.3);
+        }
+        70% {
+          background-color: rgba(255, 202, 222, 0.3);
+        }
+        100% {
+          background-color: rgba(255, 202, 222, 0);
+        }
+      }
+      .index-section__title {
+        margin: 0;
+        padding: 5px 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+        background: #333;
+      }
+      .index-table a {
+        color: #05c3a7;
+      }
+      .index-table > table {
+        width: 100%;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+        border-spacing: 0;
+        box-sizing: border-box;
+      }
+      .index-table > table > thead > tr > th,
+      .index-table > table > tbody > tr > th,
+      .index-table > table > tbody > tr > td {
+        box-sizing: border-box;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: left;
+        padding: 5px 15px;
+        border: 0 solid #4e536b;
+        border-width: 0 1px 1px 0;
+        background: none;
+        word-break: keep-all;
+        word-wrap: break-word;
+      }
+      .index-table > table > tbody > tr:hover > th,
+      .index-table > table > tbody > tr:hover > td {
+        background-color: #2a304d;
+      }
+      .index-table > table > thead > tr > th:first-child,
+      .index-table > table > tbody > tr > th:first-child,
+      .index-table > table > tbody > tr > td:first-child {
+        border-left-width: 1px;
+      }
+      .index-table > table > thead > tr > th {
+        border-top-width: 1px;
+      }
+      .index-table > table > thead > tr > th,
+      .index-table > table > tbody > tr > th {
+        background-color: #3b4f78;
+      }
+      .index-table > table > tbody > tr:last-child > td:first-child {
+        border-radius: 0 0 0 5px;
+      }
+      .index-table > table > tbody > tr:last-child > td:last-child {
+        border-radius: 0 0 5px 0;
+      }
+      .index-status {
+        display: inline-block;
+        vertical-align: top;
+        padding: 3px 8px;
+        margin: -3px 0;
+        background: #999;
+        color: #fff;
+        border-radius: 5px;
+      }
+      .index-status--ing {
+        background-color: #e29300;
+      }
+      .index-status--end {
+        background-color: #00a6a0;
+      }
+      .index-status--moding {
+        background-color: #ff4594;
+      }
+      .index-log {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .index-log__item {
+        position: relative;
+        padding-left: 80px;
+      }
+      .index-log__item__date {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .index-text {
+        margin-bottom: 20px;
+      }
+      .index-type {
+        color: #2b5cd9;
+      }
+    </style>
+    <!-- //style -->
+  </head>
+  <body>
+    <div class="index-wrap">
+      <h1 class="index-title"></h1>
+      <div class="index-gnb">
+        <div class="index-links">
+          <div class="index-links__inner">
+            <a href="./guide-popup.html" target="_blank">레이어 팝업 가이드</a>
+            <a href="./guide-component.html" target="_blank">컴포넌트 가이드</a>
+            <a href="./guide-script.html" target="_blank">스크립트 가이드</a>
+          </div>
+        </div>
+      </div>
+      <div class="index-bottom">
+        <div class="index-links">
+          <div class="index-links__inner" id="nav"></div>
+        </div>
+      </div>
+
+      <div class="index-text">해당 프로젝트는 Vue.js로 개발 진행되므로 모든 페이지의 데이터가 동적으로 들어온다 가정하고 작업이 필요합니다.</div>
+
+      <div class="index-datas" id="indexTable"></div>
+    </div>
+
+    <div class="index-fake-botttom"></div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./dist/assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+      var title = 'SKT DX Cloud - X Caliber';
+      var tableData = [
+        /*
+        {
+          depth1: '',
+          data: [
+            {
+              id: '',
+              depth2: '',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '',
+              status: '',
+              create: '',
+              update: '',
+              log: [
+                //{ date: '', text: '', },
+              ],
+            },
+          ],
+        },
+        */
+        {
+          depth1: '공통',
+          data: [
+            {
+              id: '',
+              depth2: '레이아웃',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/_layout.html',
+              status: 'end',
+              create: '2021.09.03',
+              log: [
+                { date: '2021.09.10', text: '데이트피커 관련 라이브러리 추가' },
+                { date: '2021.12.14', text: '푸터 버튼 추가' },
+                { date: '2021.12.17', text: '푸터 대소문자 수정' },
+                { date: '2022.01.14', text: 'range 피커 라이브러리 추가' },
+              ],
+            },
+            {
+              id: '',
+              depth2: '로딩바',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/_loading.html',
+              status: 'end',
+              create: '2021.10.12',
+              log: [],
+            },
+            {
+              id: 'TER001',
+              depth2: '약관 (팝업)',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/TER001.html',
+              status: 'end',
+              create: '2021.09.24',
+              log: [{ date: '2021.11.01', text: '약관 내용 출력 아이프레임으로 변경' }],
+            },
+            {
+              id: '',
+              depth2: '얼럿1 (팝업)',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/_alert1.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+            {
+              id: '',
+              depth2: '얼럿2 (팝업)',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/_alert2.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+            {
+              id: 'ECE001',
+              depth2: '접근권한 없는 경우',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/ECE001.html',
+              status: 'end',
+              create: '2021.11.01',
+              log: [{ date: '2021.11.16', text: '문구 수정' }],
+            },
+            {
+              id: 'ECE002',
+              depth2: '공통 에러 페이지',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/ECE002.html',
+              status: 'end',
+              create: '2021.12.02',
+              log: [],
+            },
+          ],
+        },
+        {
+          depth1: '시연용',
+          data: [
+            {
+              id: '',
+              depth2: '서비스',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/demo-SEV001.html',
+              status: 'end',
+              create: '2021.10.08',
+              log: [],
+            },
+            {
+              id: '',
+              depth2: '서비스',
+              depth3: '디바이스',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/demo-SEV001-device.html',
+              status: 'end',
+              create: '2021.10.08',
+              log: [],
+            },
+          ],
+        },
+        {
+          depth1: '홈',
+          data: [
+            {
+              id: 'HOME',
+              depth2: '',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/HOME.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [{ date: '2021.12.15', text: '이메일 입력란 에러 메세지 추가' }],
+            },
+          ],
+        },
+        {
+          depth1: '로그인',
+          data: [
+            {
+              id: 'LOG001',
+              depth2: '',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LOG001.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [],
+            },
+            {
+              id: 'LOG002',
+              depth2: '비밀번호 재설정',
+              depth3: '아이디 입력',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LOG002.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [],
+            },
+            {
+              id: 'LOG003',
+              depth2: '비밀번호 재설정',
+              depth3: '이메일 접근',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LOG003.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [{ date: '2021.09.03', text: '문구 수정, 툴팁 추가' }],
+            },
+            {
+              id: 'LOG004',
+              depth2: '아이디 찾기',
+              depth3: '정보 입력',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LOG004.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [{ date: '2021.09.03', text: '문구 수정' }],
+            },
+            {
+              id: 'LOG005',
+              depth2: '아이디 찾기',
+              depth3: '결과',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LOG005.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [{ date: '2021.09.30', text: '비밀번호 찾기 링크 추가' }],
+            },
+            {
+              id: 'LOG006',
+              depth2: '업데이트 된 약관 동의',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LOG006.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [],
+            },
+            {
+              id: 'LOG007',
+              depth2: '다른 세션 로그인 중',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LOG007.html',
+              status: 'end',
+              create: '2021.11.09',
+              log: [{ date: '2021.11.16', text: '문구 수정' }],
+            },
+            {
+              id: 'LOG008',
+              depth2: '휴면회원 안내',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LOG008.html',
+              status: 'end',
+              create: '2021.11.09',
+              log: [{ date: '2021.11.16', text: '문구 수정' }],
+            },
+          ],
+        },
+        {
+          depth1: '회원가입',
+          data: [
+            {
+              id: 'JOIN001',
+              depth2: 'Email 입력',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/JOIN001.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [],
+            },
+            {
+              id: 'JOIN002',
+              depth2: 'Email 인증',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/JOIN002.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [{ date: '2021.09.03', text: '문구 수정' }],
+            },
+            {
+              id: 'JOIN004',
+              depth2: '약관동의',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/JOIN004.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [{ date: '2021.12.02', text: '14세 이상 동의 추가' }],
+            },
+            {
+              id: 'JOIN005',
+              depth2: '가입정보 입력(B2C)',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/JOIN005.html',
+              status: 'end',
+              create: '2021.08.27',
+              log: [
+                { date: '2021.09.03', text: '문구 수정, 툴팁 추가' },
+                { date: '2021.09.30', text: '문구 추가' },
+                { date: '2021.11.25', text: '이전 버튼 추가' },
+              ],
+            },
+            {
+              id: 'JOIN006',
+              depth2: '가입완료',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/JOIN006.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+          ],
+        },
+        {
+          depth1: '서비스',
+          data: [
+            {
+              id: 'SEV001',
+              depth2: '',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/SEV001.html',
+              status: 'end',
+              create: '2021.09.03',
+              log: [],
+            },
+            {
+              id: 'SEV002',
+              depth2: '상품(요금제) 선택',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/SEV002.html',
+              status: 'end',
+              create: '2021.09.03',
+              log: [{ date: '2022.01.14', text: '할인 내용 추가' }],
+            },
+          ],
+        },
+        {
+          depth1: '구독',
+          data: [
+            {
+              id: 'SUB001',
+              depth2: '본인인증',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/SUB001.html',
+              status: 'end',
+              create: '2021.09.03',
+              log: [],
+            },
+            {
+              id: 'SUB001',
+              depth2: '본인인증',
+              depth3: '실패',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/SUB001--fail.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+            {
+              id: 'SUB002',
+              depth2: '상품약관 동의',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/SUB002.html',
+              status: 'end',
+              create: '2021.09.03',
+              log: [],
+            },
+            {
+              id: 'SUB003',
+              depth2: '결제정보',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/SUB003.html',
+              status: 'end',
+              create: '2021.09.03',
+              log: [{ date: '2021.12.22', text: '이전 버튼 추가' }],
+            },
+            {
+              id: 'CRE002',
+              depth2: 'PG 선택 (팝업)',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CRE002.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [],
+            },
+            {
+              id: 'SUB005',
+              depth2: '구독완료',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/SUB005.html',
+              status: 'end',
+              create: '2021.09.03',
+              log: [],
+            },
+          ],
+        },
+        {
+          depth1: '서포트',
+          data: [
+            {
+              id: 'NOTICE001',
+              depth2: '공지사항',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/NOTICE001.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [],
+            },
+            {
+              id: 'NOTICE002',
+              depth2: '공지사항',
+              depth3: '상세',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/NOTICE002.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [{ date: '2021.11.26', text: '첨부 파일 링크 추가' }],
+            },
+            {
+              id: 'FAQ001',
+              depth2: 'FAQ',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/FAQ001.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'INQ001',
+              depth2: '1:1문의',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/INQ001.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+          ],
+        },
+        {
+          depth1: '마이페이지',
+          data: [
+            {
+              id: 'MYP001',
+              depth2: '메인',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/MYP001.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.10.15', text: '로그아웃 버튼 추가' },
+                { date: '2021.12.02', text: '구독 영역 경우의 수 추가' },
+                { date: '2021.12.14', text: '회원탈퇴 버튼 추가' },
+                { date: '2021.12.24', text: '구독중/구독해지 상태 표시 추가' },
+                { date: '2022.08.19', text: '면허번호, 소속 항목 추가' },
+              ],
+            },
+            {
+              id: 'MYP002',
+              depth2: '메인',
+              depth3: '구독 반려 (팝업)',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/MYP002.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [],
+            },
+            {
+              id: 'B2B001',
+              depth2: 'B2B전환 신청',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/B2B001.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [{ date: '2021.11.01', text: '오타 수정' }],
+            },
+            {
+              id: 'B2B002',
+              depth2: 'B2B전환 신청',
+              depth3: '심사 중',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/B2B002.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [],
+            },
+            {
+              id: 'B2B003',
+              depth2: 'B2B전환 신청',
+              depth3: '반려',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/B2B003.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [],
+            },
+            {
+              id: 'CMA001',
+              depth2: '회사 구성원 관리',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CMA001.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+            {
+              id: 'CMA002',
+              depth2: '회사 구성원 관리',
+              depth3: '추가 (팝업)',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CMA002.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+            {
+              id: 'CMA004',
+              depth2: '회사 구성원 관리',
+              depth3: '추가성공 (팝업)',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CMA004.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+            {
+              id: 'RES001',
+              depth2: '비밀번호 재설정',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/RES001.html',
+              status: 'end',
+              create: '2021.09.24',
+              log: [{ date: '2021.12.14', text: '문구 수정 및 항목 구성 변경' }],
+            },
+            {
+              id: 'CEL001',
+              depth2: '휴대폰번호 변경',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CEL001.html',
+              status: 'end',
+              create: '2021.09.24',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'LIC001',
+              depth2: '면허번호 변경',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LIC001.html',
+              status: 'end',
+              create: '2022.08.19',
+              log: [],
+            },
+            {
+              id: 'AFF001',
+              depth2: '소속 변경',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/AFF001.html',
+              status: 'end',
+              create: '2022.08.19',
+              log: [],
+            },
+            {
+              id: 'CRE003',
+              depth2: '카드정보 관리 (팝업)',
+              depth3: '본인인증 되지 않은 경우',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CRE003.html',
+              status: 'end',
+              create: '2021.12.02',
+              log: [],
+            },
+            {
+              id: 'CRE001_01',
+              depth2: '카드정보 관리 (팝업)',
+              depth3: '등록된 카드정보가 존재하지 않는 경우',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CRE001_01.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'CRE001_02',
+              depth2: '카드정보 관리 (팝업)',
+              depth3: '등록된 카드가 있는 상태',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CRE001_02.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [],
+            },
+            {
+              id: 'CRE002',
+              depth2: 'PG 선택 (팝업)',
+              depth3: '등록된 카드가 있는 상태',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CRE002.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'PAY001',
+              depth2: '결제 내역',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/PAY001.html',
+              status: 'end',
+              create: '2021.09.24',
+              log: [
+                { date: '2021.11.01', text: '문구 수정' },
+                { date: '2021.11.16', text: '컬럼 추가' },
+                { date: '2022.11.16', text: '필터 드롭 다운 영역에 클래스 값 및 속성 추가' },
+              ],
+            },
+            {
+              id: 'PAY002',
+              depth2: '미납금 내역',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/PAY002.html',
+              status: 'end',
+              create: '2021.09.24',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'MYQ001',
+              depth2: '1:1문의 내역',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/MYQ001.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+            {
+              id: 'MYQ002',
+              depth2: '1:1문의 내역',
+              depth3: '상세',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/MYQ002.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [],
+            },
+            {
+              id: 'LDS001',
+              depth2: '로컬 기기 설정',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LDS001.html',
+              status: 'end',
+              create: '2021.09.30',
+              log: [{ date: '2021.11.01', text: '구독 아이디 및 서비스 정보 표출 추가' }],
+            },
+            {
+              id: 'USA001',
+              depth2: '구독상품',
+              depth3: '이용 내역',
+              depth4: 'B2C상품',
+              depth5: '',
+              depth6: '',
+              path: '/USA001.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.11.01', text: '내용 없는 경우 추가' },
+                { date: '2021.11.09', text: '상품명 타이틀 추가' },
+                { date: '2021.11.10', text: '상품명 타이틀 클래스명 수정' },
+                { date: '2021.11.16', text: '문구 수정' },
+              ],
+            },
+            {
+              id: 'USA002',
+              depth2: '구독상품',
+              depth3: '이용 내역',
+              depth4: 'B2B상품',
+              depth5: '',
+              depth6: '',
+              path: '/USA002.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.11.09', text: '상품명 타이틀 추가' },
+                { date: '2021.11.10', text: '상품명 타이틀 클래스명 수정' },
+              ],
+            },
+            {
+              id: 'BIL001',
+              depth2: '구독상품',
+              depth3: '청구서',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/BIL001.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.11.01', text: '할인 정보, 총계 정보 추가' },
+                { date: '2021.11.10', text: '상품명 타이틀 추가' },
+              ],
+            },
+            {
+              id: 'UMA001',
+              depth2: '구독상품',
+              depth3: '이용자 관리 (B2B)',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/UMA001.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [{ date: '2021.11.10', text: '상품명 타이틀 추가' }],
+            },
+            {
+              id: 'UMA002',
+              depth2: '구독상품',
+              depth3: '이용자 관리 (B2B)',
+              depth4: '추가 (팝업)',
+              depth5: '',
+              depth6: '',
+              path: '/UMA002.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [],
+            },
+            {
+              id: 'UMA004',
+              depth2: '구독상품',
+              depth3: '이용자 관리 (B2B)',
+              depth4: '추가 성공 (팝업)',
+              depth5: '',
+              depth6: '',
+              path: '/UMA004.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'UNS001',
+              depth2: '구독상품',
+              depth3: '구독취소',
+              depth4: 'B2C',
+              depth5: '선불',
+              depth6: '',
+              path: '/UNS001.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.11.01', text: '케이스 추가 및 버튼명 변경' },
+                { date: '2021.11.10', text: '상품명 타이틀 추가' },
+              ],
+            },
+            {
+              id: 'UNS001',
+              depth2: '구독상품',
+              depth3: '구독취소',
+              depth4: 'B2C',
+              depth5: '후불',
+              depth6: '',
+              path: '/UNS001--type2.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.11.01', text: '케이스 추가 및 버튼명 변경' },
+                { date: '2021.11.10', text: '상품명 타이틀 추가' },
+              ],
+            },
+            {
+              id: 'UNS002',
+              depth2: '구독상품',
+              depth3: '구독취소',
+              depth4: 'B2B',
+              depth5: '선불',
+              depth6: '',
+              path: '/UNS002.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.11.01', text: '케이스 추가 및 버튼명 변경' },
+                { date: '2021.11.10', text: '상품명 타이틀 추가' },
+              ],
+            },
+            {
+              id: 'UNS002',
+              depth2: '구독상품',
+              depth3: '구독취소',
+              depth4: 'B2B',
+              depth5: '후불',
+              depth6: '',
+              path: '/UNS002--type2.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.11.01', text: '케이스 추가 및 버튼명 변경' },
+                { date: '2021.11.10', text: '상품명 타이틀 추가' },
+              ],
+            },
+            {
+              id: 'CHP001',
+              depth2: '요금제 변경',
+              depth3: '요금제 선택',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CHP001.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [
+                { date: '2021.11.01', text: '문구 수정' },
+                { date: '2022.01.14', text: '할인 내용 추가' },
+              ],
+            },
+            {
+              id: 'CHP002',
+              depth2: '요금제 변경',
+              depth3: '기존 요금제 정산',
+              depth4: '선불',
+              depth5: '',
+              depth6: '',
+              path: '/CHP002.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [{ date: '2021.11.01', text: '케이스 추가 및 버튼명 변경' }],
+            },
+            {
+              id: 'CHP002',
+              depth2: '요금제 변경',
+              depth3: '기존 요금제 정산',
+              depth4: '후불',
+              depth5: '',
+              depth6: '',
+              path: '/CHP002--type2.html',
+              status: 'end',
+              create: '2021.09.10',
+              log: [{ date: '2021.11.01', text: '케이스 추가 및 버튼명 변경' }],
+            },
+            {
+              id: 'LEV001',
+              depth2: '회원탈퇴 (팝업)',
+              depth3: '가능한 경우',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LEV001.html',
+              status: 'end',
+              create: '2021.12.14',
+              log: [],
+            },
+            {
+              id: 'LEV001',
+              depth2: '회원탈퇴 (팝업)',
+              depth3: '불가능한 경우',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/LEV001--type2.html',
+              status: 'end',
+              create: '2021.12.14',
+              log: [],
+            },
+          ],
+        },
+        {
+          depth1: '콘솔',
+          data: [
+            {
+              id: 'CON001',
+              depth2: '목록',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CON001.html',
+              status: 'end',
+              create: '2021.09.17',
+              log: [{ date: '2022.09.21', text: '목록 슬라이드 링크 구조로 변경' }],
+            },
+            {
+              id: 'CON001',
+              depth2: '목록',
+              depth3: '내용 없음',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CON001--empty.html',
+              status: 'end',
+              create: '2021.12.22',
+              log: [],
+            },
+            {
+              id: 'CON002',
+              depth2: '수의',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CON002.html',
+              status: 'end',
+              create: '2021.09.17',
+              log: [
+                { date: '2021.11.01', text: '문구 수정' },
+                { date: '2021.12.22', text: '리스트 링크 처리' },
+                { date: '2022.05.31', text: '이미지 업로드 UI 변경' },
+              ],
+            },
+            {
+              id: 'CON003',
+              depth2: '수의',
+              depth3: '환축보호자 등록 (팝업)',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CON003.html',
+              status: 'end',
+              create: '2021.09.17',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'CON004',
+              depth2: '수의',
+              depth3: '상세',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/CON004.html',
+              status: 'end',
+              create: '2021.09.17',
+              log: [
+                { date: '2021.10.12', text: '하단 목록으로 가기 버튼 추가' },
+                { date: '2021.11.01', text: '문구 수정' },
+                { date: '2021.11.09', text: '엑스레이 사각형 박스와 넘버링 html 분리' },
+                { date: '2022.01.14', text: '노츨 범의 선택 추가' },
+                { date: '2022.07.29', text: '케이스 추가 및 수정' },
+              ],
+            },
+            {
+              id: 'CON004',
+              depth2: '수의',
+              depth3: '상세',
+              depth4: 'PDF용',
+              depth5: '',
+              depth6: '',
+              path: '/CON004--pdf.html',
+              status: 'end',
+              create: '2021.09.17',
+              log: [
+                { date: '2021.09.30', text: '태블릿, 모바일 css 제거 및 pdf용 css 추가\n컨텐츠 감싸는 태그 하나 추가' },
+                { date: '2021.10.05', text: '전체적으로 html 구성 변경' },
+                { date: '2021.10.08', text: '텍스트 오타 및 표지 수정' },
+                { date: '2021.11.01', text: '문구 수정' },
+                { date: '2021.11.09', text: '엑스레이 사각형 박스와 넘버링 html 분리' },
+                { date: '2022.07.29', text: '케이스 추가 및 수정' },
+              ],
+            },
+          ],
+        },
+        {
+          depth1: '이메일 양식',
+          data: [
+            {
+              id: 'EMAIL001',
+              depth2: '확인 코드',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/e-mail/EMAIL001.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [],
+            },
+            {
+              id: 'EMAIL002',
+              depth2: '비밀번호 재설정 요청',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/e-mail/EMAIL002.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [],
+            },
+            {
+              id: 'EMAIL003',
+              depth2: '1:1문의 답변등록',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/e-mail/EMAIL003.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'EMAIL006',
+              depth2: '이용한도 50% 도래',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/e-mail/EMAIL006.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'EMAIL007',
+              depth2: '이용한도 90% 도래',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/e-mail/EMAIL007.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [{ date: '2021.11.01', text: '문구 수정' }],
+            },
+            {
+              id: 'EMAIL008',
+              depth2: '이용한도 100% 도래',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/e-mail/EMAIL008.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [],
+            },
+            {
+              id: 'EMAIL009',
+              depth2: '분석결과 이메일 발송',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/e-mail/EMAIL009.html',
+              status: 'end',
+              create: '2021.10.05',
+              log: [],
+            },
+            {
+              id: 'EMAIL010',
+              depth2: '휴면 전환 예정 안내',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/e-mail/EMAIL010.html',
+              status: 'end',
+              create: '2021.11.09',
+              log: [],
+            },
+          ],
+        },
+        {
+          depth1: '약관',
+          data: [
+            {
+              id: '',
+              depth2: 'X_Caliber_개인회원_이용약관',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/terms/X_Caliber_개인회원_이용약관/2021-12-21.html',
+              status: 'end',
+              create: '2021.12.21',
+              log: [],
+            },
+            {
+              id: '',
+              depth2: '개인정보_수집이용_동의(필수동의)',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/terms/개인정보_수집이용_동의(필수동의)/2021-12-21.html',
+              status: 'end',
+              create: '2021.12.21',
+              log: [],
+            },
+            {
+              id: '',
+              depth2: '광고성_정보_수신_동의(선택동의)',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/terms/광고성_정보_수신_동의(선택동의)/2021-12-21.html',
+              status: 'end',
+              create: '2021.11.15',
+              log: [{ date: '2021.12.21', text: '스타일 수정' }],
+            },
+            {
+              id: '',
+              depth2: '수의_AI진단_보조서비스_개인정보_수집_및_이용에_대한_동의(필수동의)',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/terms/수의_AI진단_보조서비스_개인정보_수집_및_이용에_대한_동의(필수동의)/2021-12-21.html',
+              status: 'end',
+              create: '2021.12.21',
+              log: [],
+            },
+            {
+              id: '',
+              depth2: 'SK텔레콤_수의_AI진단보조_서비스_이용_약관',
+              depth3: '',
+              depth4: '',
+              depth5: '',
+              depth6: '',
+              path: '/terms/SK텔레콤_수의_AI진단보조_서비스_이용_약관/2021-12-21.html',
+              status: 'end',
+              create: '2021.12.21',
+              log: [],
+            },
+          ],
+        },
+      ];
+
+      var html = '';
+      var navHTML = '';
+      var totalIndex = 0;
+      var dates = (function () {
+        var array = [];
+
+        function add(date) {
+          if (typeof date === 'string' && date.length && array.indexOf(date) === -1) {
+            array.push(date);
+          }
+        }
+
+        $.each(tableData, function (i) {
+          var sectionData = tableData[i].data;
+          $.each(sectionData, function (j) {
+            add(this.create);
+            $.each(sectionData[j].log, function (l) {
+              add(this.date);
+            });
+          });
+        });
+
+        array.sort();
+
+        return array;
+      })();
+      var latestDate = dates[dates.length - 1];
+
+      $.each(tableData, function (i) {
+        var sectionIndex = i;
+        var sectionData = tableData[i].data;
+        var tableHTML = '';
+
+        $.each(sectionData, function (j) {
+          var returnVal = function (key, secondTestKey) {
+            var val = sectionData[j][key];
+            var secondTestVal = sectionData[j][secondTestKey];
+            var prevIndex = j - 1;
+            var isPrint = true;
+            if (prevIndex >= 0) {
+              if (sectionData[prevIndex][key] === val) {
+                isPrint = false;
+              }
+              if (typeof secondTestKey === 'string' && secondTestKey.length && !sectionData[j].depthOnly) {
+                if (sectionData[prevIndex][key] === val && sectionData[prevIndex][secondTestKey] === secondTestVal) {
+                  isPrint = false;
+                } else {
+                  isPrint = true;
+                }
+              }
+            }
+            return isPrint ? val.replace(/\n/g, '<br>') : '';
+          };
+          var id = returnVal('id');
+          //var type = returnVal('type', 'depth2');
+          var depth2 = returnVal('depth2');
+          var depth3 = returnVal('depth3');
+          var depth4 = returnVal('depth4');
+          var depth5 = returnVal('depth5');
+          var depth6 = returnVal('depth6');
+          var path = (function () {
+            var val = sectionData[j].path;
+            var href = '';
+            if (val.match(/^\.\//g)) {
+              href = val;
+            } else {
+              href = './dist' + val;
+            }
+            return val.length ? '<a href="' + href + '" target="_blank">' + val + '</a>' : '';
+          })();
+          var status = (function () {
+            var val = sectionData[j].status;
+            var text = '';
+            if (val === 'ing') {
+              text = '작업중';
+            } else if (val === 'end') {
+              text = '작업완료';
+            } else if (val === 'moding') {
+              text = '수정중';
+            }
+            return val.length ? '<span class="index-status index-status--' + val + '">' + text + '</span>' : '';
+          })();
+          var create = this.create;
+          var update = '';
+          var log = (function () {
+            var val = sectionData[j].log;
+            var length = val.length;
+            var html = '<ul class="index-log">';
+            $.each(val, function (l) {
+              var date = this.date;
+              html +=
+                '<li class="index-log__item' +
+                (date === latestDate ? ' is-emphasis' : '') +
+                '"><div class="index-log__item__date">[' +
+                date +
+                ']</div>' +
+                this.text.replace(/\n/g, '<br>') +
+                '</li>';
+              if (length - 1 === l) {
+                update = date;
+              }
+            });
+            html += '</ul>';
+
+            return html;
+          })();
+
+          tableHTML +=
+            '<tr>' +
+            '<td>' +
+            (j + 1) +
+            '</td>' +
+            '<td>' +
+            id +
+            '</td>' +
+            //'<td class="index-type">' +
+            //type +
+            //'</td>' +
+            '<td>' +
+            depth2 +
+            '</td>' +
+            '<td>' +
+            depth3 +
+            '</td>' +
+            '<td>' +
+            depth4 +
+            '</td>' +
+            '<td>' +
+            depth5 +
+            '</td>' +
+            '<td>' +
+            depth6 +
+            '</td>' +
+            '<td>' +
+            path +
+            '</td>' +
+            '<td>' +
+            status +
+            '</td>' +
+            '<td class="' +
+            (create === latestDate ? ' is-emphasis' : '') +
+            '">' +
+            create +
+            '</td>' +
+            '<td class="' +
+            (update === latestDate ? ' is-emphasis' : '') +
+            '">' +
+            update +
+            '</td>' +
+            '<td>' +
+            log +
+            '</td>' +
+            '</tr>';
+
+          totalIndex++;
+        });
+
+        navHTML += '<a href="#section' + i + '">' + tableData[i].depth1 + '</a>';
+
+        html +=
+          '<div class="index-section" id="section' +
+          i +
+          '">' +
+          '<h2 class="index-section__title">' +
+          tableData[i].depth1 +
+          '</h2>' +
+          '<div class="index-table">' +
+          '<table>' +
+          '<colgroup>' +
+          '<col width="50px" />' +
+          '<col width="160px" />' +
+          //'<col width="80px" />' +
+          '<col width="160px" />' +
+          '<col width="160px" />' +
+          '<col width="160px" />' +
+          '<col width="160px" />' +
+          '<col width="160px" />' +
+          '<col width="" />' +
+          '<col width="100px" />' +
+          '<col width="110px" />' +
+          '<col width="110px" />' +
+          '<col width="300px" />' +
+          '</colgroup>' +
+          '<thead>' +
+          '<tr>' +
+          '<th>No</th>' +
+          '<th>ID</th>' +
+          //'<th>type</th>' +
+          '<th>depth2</th>' +
+          '<th>depth3</th>' +
+          '<th>depth4</th>' +
+          '<th>depth5</th>' +
+          '<th>depth6</th>' +
+          '<th>path</th>' +
+          '<th>status</th>' +
+          '<th>create</th>' +
+          '<th>update</th>' +
+          '<th>log</th>' +
+          '</tr>' +
+          '</thead>' +
+          '<tbody>' +
+          tableHTML +
+          '</tbody>' +
+          '</table>' +
+          '</div>' +
+          '</div>';
+      });
+
+      $('title, .index-title').text(title);
+      $('#nav').append(navHTML);
+      $('#indexTable').append(html);
+
+      var $nav = $('.index-bottom');
+      var $doc = $(document);
+      var $win = $(window);
+
+      function paddingBottom() {
+        $('.index-fake-botttom').css('height', $nav.outerHeight());
+      }
+
+      var clickedTimer = null;
+
+      $doc.on('click', '#nav a', function () {
+        var $this = $(this);
+        var href = $this.attr('href');
+        var $target = $(href);
+        var $sections = $('.index-section');
+
+        $sections.removeClass('index-section--clicked');
+
+        clearTimeout(clickedTimer);
+
+        clickedTimer = setTimeout(function () {
+          $target.addClass('index-section--clicked');
+        }, 100);
+      });
+
+      $win
+        .on('scroll', function () {
+          var scrollLeft = $win.scrollLeft();
+          $nav.css('margin-left', -scrollLeft);
+        })
+        .on('resize', function () {
+          paddingBottom();
+        })
+        .on('load', function () {
+          paddingBottom();
+        });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

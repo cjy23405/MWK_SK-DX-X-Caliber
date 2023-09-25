@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="985">
+    <defs>
+        <style>
+            .cls-4{fill:#fff}
+        </style>
+    </defs>
+    <g id="그룹_6290" data-name="그룹 6290" transform="translate(0 -3051)">
+        <g id="그룹_2239" data-name="그룹 2239" transform="translate(0 3051)" style="opacity:.7">
+            <g id="그룹_2238" data-name="그룹 2238">
+                <g id="그룹_2235" data-name="그룹 2235" style="opacity:.04">
+                    <path id="패스_2500" data-name="패스 2500" class="cls-4" d="M0 0h160v160H0z" transform="translate(160 320)"/>
+                    <path id="패스_2501" data-name="패스 2501" class="cls-4" d="M0 0h160v160H0z" transform="translate(320 160)"/>
+                    <path id="패스_2502" data-name="패스 2502" class="cls-4" d="M0 0h160v160H0z" transform="translate(480)"/>
+                    <path id="패스_2503" data-name="패스 2503" class="cls-4" d="M0 0h160v160H0z" transform="translate(0 480)"/>
+                </g>
+                <g id="그룹_2237" data-name="그룹 2237" style="opacity:.08">
+                    <path id="패스_2497" data-name="패스 2497" class="cls-4" d="M0 0h160v160H0z" transform="translate(160 160)"/>
+                    <path id="패스_2499" data-name="패스 2499" class="cls-4" d="M0 0h160v160H0z" transform="translate(0 320)"/>
+                    <path id="패스_2498" data-name="패스 2498" class="cls-4" d="M0 0h160v160H0z" transform="translate(320)"/>
+                </g>
+            </g>
+            <g id="그룹_2236" data-name="그룹 2236" style="opacity:.1">
+                <path id="사각형_5670" data-name="사각형 5670" class="cls-4" d="M0 0h160v160H0z"/>
+                <path id="사각형_5671" data-name="사각형 5671" class="cls-4" transform="translate(160)" d="M0 0h160v160H0z"/>
+                <path id="사각형_5672" data-name="사각형 5672" class="cls-4" transform="translate(0 160)" d="M0 0h160v160H0z"/>
+            </g>
+        </g>
+    </g>
+</svg>

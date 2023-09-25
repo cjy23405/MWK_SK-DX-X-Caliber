@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="layout-wrap">
+        <!-- fix top area -->
+        <div class="fix-top-wrap">
+          <!-- header -->
+          <header class="header">
+            <div class="header__inner">
+              <h1 class="header__logo">
+                <a href="" class="header__logo-link">
+                  <span class="for-a11y">X Caliber</span>
+                </a>
+              </h1>
+
+              <div class="header-gnb">
+                <ul class="header-gnb__list">
+                  <li class="header-gnb__item">
+                    <a href="" class="header-gnb__link">Service</a>
+                    <div class="header-gnb__depth">
+                      <ul class="header-gnb__depth-list">
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">Veterinary</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-gnb__item">
+                    <a href="" class="header-gnb__link">Device</a>
+                  </li>
+                  <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                  <li class="header-gnb__item is-active">
+                    <a href="" class="header-gnb__link">Support</a>
+                    <div class="header-gnb__depth">
+                      <ul class="header-gnb__depth-list">
+                        <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                        <li class="header-gnb__depth-item is-active">
+                          <a href="" class="header-gnb__depth-link">Notice</a>
+                        </li>
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">FAQ</a>
+                        </li>
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">Help</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="header-etc">
+                <ul class="header-etc__list">
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button header-etc__button--console">Console</a>
+                  </li>
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button">Sign in</a>
+                  </li>
+                </ul>
+
+                <div class="header-lang js-ui-dropdown">
+                  <div class="header-lang__head">
+                    <span class="header-lang__text">ENG</span>
+                    <button type="button" class="ui-button header-lang__opener js-ui-dropdown__opener">
+                      <span class="for-a11y">
+                        change language
+                        <span class="open-text">open</span>
+                        <span class="close-text">close</span>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="header-lang__layer js-ui-dropdown__layer">
+                    <div class="header-lang__contents">
+                      <ul class="header-lang__list">
+                        <li class="header-lang__item">
+                          <a href="" class="header-lang__link">ENG</a>
+                        </li>
+                        <li class="header-lang__item">
+                          <a href="" class="header-lang__link">KOR</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="ui-button header-menu" data-layer-open="layer-gnb">
+                  <span class="for-a11y">Global Navigation Bar Open</span>
+                </button>
+              </div>
+            </div>
+          </header>
+          <!-- //header -->
+        </div>
+        <!-- //fix top area -->
+
+        <!-- layer: GNB -->
+        <div class="layer-wrap layer-gnb" data-layer="layer-gnb">
+          <div class="layer-container">
+            <nav class="gnb">
+              <div class="gnb__head">
+                <h2 class="for-a11y">Global Navigation Bar</h2>
+                <div class="gnb__logo">
+                  <a href="" class="gnb__logo-link">
+                    <span class="for-a11y">X Caliber</span>
+                  </a>
+                </div>
+                <button type="button" class="ui-button gnb__close" data-role="layerClose">
+                  <span class="for-a11y">close</span>
+                </button>
+              </div>
+
+              <div class="gnb__body">
+                <div class="gnb__body-inner">
+                  <ul class="gnb__list">
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Service</a>
+                        <button type="button" class="ui-button gnb__opener">
+                          <span class="for-a11y">
+                            Submenu
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="gnb__depth">
+                        <ul class="gnb__depth-list">
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">Veterinary</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Device</a>
+                      </div>
+                    </li>
+                    <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                    <li class="gnb__item is-active">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Support</a>
+                        <button type="button" class="ui-button gnb__opener">
+                          <span class="for-a11y">
+                            Submenu
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="gnb__depth">
+                        <ul class="gnb__depth-list">
+                          <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                          <li class="gnb__depth-item is-active">
+                            <a href="" class="gnb__depth-link">Notice</a>
+                          </li>
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">FAQ</a>
+                          </li>
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">Help</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">My Page</a>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Console</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="gnb__foot">
+                <ul class="header-etc__list">
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button">Sign in</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- //layer: GNB -->
+
+        <div class="contents-wrap">
+          <div class="page-contents page-contents--faq">
+            <section class="contents-width">
+              <div class="sign-head">
+                <h2 class="sign-head__title">FAQ</h2>
+                <!-- 2021.11.01 : mod : 문구 수정 -->
+                <p class="sign-head__text">
+                  What would you like to find?<br />
+                  If you didn't find the answer you
+                  <span class="inline-block">
+                    wanted, <a href="" class="none-deco-link color-blue"><strong>Go to inquiry</strong></a>
+                  </span>
+                </p>
+                <!-- //2021.11.01 : mod : 문구 수정 -->
+              </div>
+
+              <section class="form-section form-section--billing">
+                <div class="form-section__head">
+                  <h3 class="form-section__title">Select a topic</h3>
+                </div>
+
+                <div class="box-check box-check--sixth">
+                  <ul class="box-check__list">
+                    <li class="box-check__item">
+                      <div class="ui-radio-block ui-radio-block--box">
+                        <a href="" class="ui-label">
+                          <span class="ui-radio-object"></span>
+                          <span class="ui-label__text">Account</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="box-check__item">
+                      <!-- DD : 현재 페이지면 is-active 클래스 값 추가 -->
+                      <div class="ui-radio-block ui-radio-block--box is-active">
+                        <a href="" class="ui-label">
+                          <span class="ui-radio-object"></span>
+                          <span class="ui-label__text">AI Service</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="box-check__item">
+                      <div class="ui-radio-block ui-radio-block--box">
+                        <a href="" class="ui-label">
+                          <span class="ui-radio-object"></span>
+                          <span class="ui-label__text">AI Device</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="box-check__item">
+                      <div class="ui-radio-block ui-radio-block--box">
+                        <a href="" class="ui-label">
+                          <span class="ui-radio-object"></span>
+                          <span class="ui-label__text">Subscription</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="box-check__item">
+                      <div class="ui-radio-block ui-radio-block--box">
+                        <a href="" class="ui-label">
+                          <span class="ui-radio-object"></span>
+                          <span class="ui-label__text">Payment</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="box-check__item">
+                      <div class="ui-radio-block ui-radio-block--box">
+                        <a href="" class="ui-label">
+                          <span class="ui-radio-object"></span>
+                          <span class="ui-label__text">Billing</span>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="form-section form-section--billing">
+                <div class="form-section__head">
+                  <h3 class="form-section__title">Or tell us what you need help with</h3>
+                </div>
+
+                <form action="">
+                  <div class="search-form">
+                    <div class="form-group-row">
+                      <div class="form-flex form-flex--regist">
+                        <div class="form-flex-cell form-flex-cell--flexible">
+                          <div class="ui-input-block">
+                            <input type="text" class="ui-input" title="Topic" placeholder="Enter a topic" />
+                          </div>
+                        </div>
+                        <div class="form-flex-cell">
+                          <button type="submit" class="ui-button ui-basic-button ui-basic-button--secondary">Find out</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </section>
+
+              <div class="billing-info">
+                <ul class="billing-info__list js-ui-accordion">
+                  <li class="billing-info__item js-ui-accordion__item">
+                    <div class="billing-info__head billing-info__head--faq">
+                      <div class="billing-info__cell">
+                        <h3 class="billing-info__title">How to find my account?</h3>
+                      </div>
+                      <button type="button" class="ui-button billing-info__opener js-ui-accordion__opener">
+                        <span class="for-a11y">
+                          detail
+                          <span class="open-text">open</span>
+                          <span class="close-text">close</span>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="billing-info__layer js-ui-accordion__layer">
+                      <section class="billing-info__contents billing-info__contents--faq">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis sed ex a molestie. In egestas viverra elit, vitae
+                        rhoncus orci pellentesque nec. Quisque a dolor aliquam, bibendum dui posuere, malesuada erat. Etiam scelerisque tristique
+                        posuere. In hac habitasse platea dictumst. Proin faucibus nisi sit amet enim porttitor iaculis. Pellentesque in lacus in est
+                        maximus lacinia sed quis dolor. Vestibulum hendrerit volutpat vehicula. Duis posuere euismod orci, vitae viverra ante interdum
+                        vel. Suspendisse sed feugiat lectus. Maecenas mattis libero at lorem ultricies dapibus sit amet semper leo. Pellentesque
+                        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dapibus lectus libero, vitae aliquam
+                        tellus condimentum a. Nunc et placerat tellus, quis vulputate augue.
+                      </section>
+                    </div>
+                  </li>
+                  <li class="billing-info__item js-ui-accordion__item">
+                    <div class="billing-info__head billing-info__head--faq">
+                      <div class="billing-info__cell">
+                        <h3 class="billing-info__title">I forgot my password</h3>
+                      </div>
+                      <button type="button" class="ui-button billing-info__opener js-ui-accordion__opener">
+                        <span class="for-a11y">
+                          detail
+                          <span class="open-text">open</span>
+                          <span class="close-text">close</span>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="billing-info__layer js-ui-accordion__layer">
+                      <section class="billing-info__contents billing-info__contents--faq">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis sed ex a molestie. In egestas viverra elit, vitae
+                        rhoncus orci pellentesque nec. Quisque a dolor aliquam, bibendum dui posuere, malesuada erat. Etiam scelerisque tristique
+                        posuere. In hac habitasse platea dictumst. Proin faucibus nisi sit amet enim porttitor iaculis. Pellentesque in lacus in est
+                        maximus lacinia sed quis dolor. Vestibulum hendrerit volutpat vehicula. Duis posuere euismod orci, vitae viverra ante interdum
+                        vel. Suspendisse sed feugiat lectus. Maecenas mattis libero at lorem ultricies dapibus sit amet semper leo. Pellentesque
+                        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dapibus lectus libero, vitae aliquam
+                        tellus condimentum a. Nunc et placerat tellus, quis vulputate augue.
+                      </section>
+                    </div>
+                  </li>
+                  <li class="billing-info__item js-ui-accordion__item">
+                    <div class="billing-info__head billing-info__head--faq">
+                      <div class="billing-info__cell">
+                        <h3 class="billing-info__title">I'd like to change my product</h3>
+                      </div>
+                      <button type="button" class="ui-button billing-info__opener js-ui-accordion__opener">
+                        <span class="for-a11y">
+                          detail
+                          <span class="open-text">open</span>
+                          <span class="close-text">close</span>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="billing-info__layer js-ui-accordion__layer">
+                      <section class="billing-info__contents billing-info__contents--faq">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis sed ex a molestie. In egestas viverra elit, vitae
+                        rhoncus orci pellentesque nec. Quisque a dolor aliquam, bibendum dui posuere, malesuada erat. Etiam scelerisque tristique
+                        posuere. In hac habitasse platea dictumst. Proin faucibus nisi sit amet enim porttitor iaculis. Pellentesque in lacus in est
+                        maximus lacinia sed quis dolor. Vestibulum hendrerit volutpat vehicula. Duis posuere euismod orci, vitae viverra ante interdum
+                        vel. Suspendisse sed feugiat lectus. Maecenas mattis libero at lorem ultricies dapibus sit amet semper leo. Pellentesque
+                        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam dapibus lectus libero, vitae aliquam
+                        tellus condimentum a. Nunc et placerat tellus, quis vulputate augue.
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button type="button" class="ui-button ui-more-button">More FAQ</button>
+            </section>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+          <nav class="footer-nav">
+            <div class="footer-nav__inner">
+              <h2 class="for-a11y">Footer Navigation Bar</h2>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Service</a>
+                  <ul class="footer-nav__depth-list">
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Veterinary</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Device</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Support</a>
+                  <ul class="footer-nav__depth-list">
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Notice</a>
+                    </li>
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">FAQ</a>
+                    </li>
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Help</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">My Page</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Console</a>
+                </li>
+              </ul>
+              <div class="footer-nav__call">
+                <p class="footer-nav__call-text">Do you have any questions?</p>
+                <a href="" class="footer-nav__call-link">Call us</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="footer__inner">
+            <ul class="footer__etc-nav">
+              <li class="footer__etc-nav-item">
+                <a href="" class="footer__etc-nav-link">Terms and Conditions</a>
+              </li>
+              <li class="footer__etc-nav-item">
+                <a href="" class="footer__etc-nav-link">Privacy Policy</a>
+              </li>
+            </ul>
+            <!-- 2021.12.17 : mod : 대소문자 수정 -->
+            <h1 class="footer__title">SK telecom</h1>
+            <!-- //2021.12.17 : mod : 대소문자 수정 -->
+            <address class="footer__address">
+              04539 65, Eulji-ro, Jung-gu, Seoul, Republic of Korea, <span class="inline-block">CEO Jung-ho, Park</span>
+            </address>
+            <!-- 2021.12.14 : add : 푸터 버튼 추가 -->
+            <div class="ui-buttons ui-buttons--center">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <a href="tel:02-6272-7582" class="ui-basic-button ui-basic-button--small ui-basic-button--quaternary">02-6272-7582</a>
+                </li>
+                <li class="ui-buttons__item">
+                  <a href="mailto:xcaliber@sktelecom.com" class="ui-basic-button ui-basic-button--small ui-basic-button--quaternary"
+                    >xcaliber@sktelecom.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- //2021.12.14 : add : 푸터 버튼 추가 -->
+            <p class="footer__copyright">Copyright SK Corp. All Right Reserved.</p>
+          </div>
+        </footer>
+        <!-- //footer -->
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <!-- //script -->
+  </body>
+</html>

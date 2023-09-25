@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.414" height="12.829">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="btn_pagenation_prepre_p" transform="translate(1 1.414)">
+        <g id="btn_pagenation_next" transform="translate(7)">
+            <path id="패스_370" data-name="패스 370" class="cls-1" d="m-2859.621-1613.425-5 5 5 5" transform="translate(2864.621 1613.425)"/>
+        </g>
+        <g id="btn_pagenation_next-2" data-name="btn_pagenation_next">
+            <path id="패스_370-2" data-name="패스 370" class="cls-1" d="m-2859.621-1613.425-5 5 5 5" transform="translate(2864.621 1613.425)"/>
+        </g>
+    </g>
+</svg>

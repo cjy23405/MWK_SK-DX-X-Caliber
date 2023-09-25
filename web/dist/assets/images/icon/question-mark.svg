@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+    <g data-name="타원 797" style="stroke:#4e536b;fill:none">
+        <circle cx="10" cy="10" r="10" style="stroke:none"/>
+        <circle cx="10" cy="10" r="9.5" style="fill:none"/>
+    </g>
+    <text data-name="?" transform="translate(6.5 15)" style="fill:#666982;font-size:14px;font-family:Roboto-Bold,Roboto;font-weight:700"><tspan x="0" y="0">?</tspan></text>
+</svg>

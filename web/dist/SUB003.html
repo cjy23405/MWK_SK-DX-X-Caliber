@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="layout-wrap">
+        <!-- fix top area -->
+        <div class="fix-top-wrap">
+          <!-- header -->
+          <header class="header">
+            <div class="header__inner">
+              <h1 class="header__logo">
+                <a href="" class="header__logo-link">
+                  <span class="for-a11y">X Caliber</span>
+                </a>
+              </h1>
+
+              <div class="header-gnb">
+                <ul class="header-gnb__list">
+                  <li class="header-gnb__item">
+                    <a href="" class="header-gnb__link">Service</a>
+                    <div class="header-gnb__depth">
+                      <ul class="header-gnb__depth-list">
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">Veterinary</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-gnb__item">
+                    <a href="" class="header-gnb__link">Device</a>
+                  </li>
+                  <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                  <li class="header-gnb__item is-active">
+                    <a href="" class="header-gnb__link">Support</a>
+                    <div class="header-gnb__depth">
+                      <ul class="header-gnb__depth-list">
+                        <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                        <li class="header-gnb__depth-item is-active">
+                          <a href="" class="header-gnb__depth-link">Notice</a>
+                        </li>
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">FAQ</a>
+                        </li>
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">Help</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="header-etc">
+                <ul class="header-etc__list">
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button header-etc__button--console">Console</a>
+                  </li>
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button">Sign in</a>
+                  </li>
+                </ul>
+
+                <div class="header-lang js-ui-dropdown">
+                  <div class="header-lang__head">
+                    <span class="header-lang__text">ENG</span>
+                    <button type="button" class="ui-button header-lang__opener js-ui-dropdown__opener">
+                      <span class="for-a11y">
+                        change language
+                        <span class="open-text">open</span>
+                        <span class="close-text">close</span>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="header-lang__layer js-ui-dropdown__layer">
+                    <div class="header-lang__contents">
+                      <ul class="header-lang__list">
+                        <li class="header-lang__item">
+                          <a href="" class="header-lang__link">ENG</a>
+                        </li>
+                        <li class="header-lang__item">
+                          <a href="" class="header-lang__link">KOR</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="ui-button header-menu" data-layer-open="layer-gnb">
+                  <span class="for-a11y">Global Navigation Bar Open</span>
+                </button>
+              </div>
+            </div>
+          </header>
+          <!-- //header -->
+        </div>
+        <!-- //fix top area -->
+
+        <!-- layer: GNB -->
+        <div class="layer-wrap layer-gnb" data-layer="layer-gnb">
+          <div class="layer-container">
+            <nav class="gnb">
+              <div class="gnb__head">
+                <h2 class="for-a11y">Global Navigation Bar</h2>
+                <div class="gnb__logo">
+                  <a href="" class="gnb__logo-link">
+                    <span class="for-a11y">X Caliber</span>
+                  </a>
+                </div>
+                <button type="button" class="ui-button gnb__close" data-role="layerClose">
+                  <span class="for-a11y">close</span>
+                </button>
+              </div>
+
+              <div class="gnb__body">
+                <div class="gnb__body-inner">
+                  <ul class="gnb__list">
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Service</a>
+                        <button type="button" class="ui-button gnb__opener">
+                          <span class="for-a11y">
+                            Submenu
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="gnb__depth">
+                        <ul class="gnb__depth-list">
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">Veterinary</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Device</a>
+                      </div>
+                    </li>
+                    <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                    <li class="gnb__item is-active">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Support</a>
+                        <button type="button" class="ui-button gnb__opener">
+                          <span class="for-a11y">
+                            Submenu
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="gnb__depth">
+                        <ul class="gnb__depth-list">
+                          <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                          <li class="gnb__depth-item is-active">
+                            <a href="" class="gnb__depth-link">Notice</a>
+                          </li>
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">FAQ</a>
+                          </li>
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">Help</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">My Page</a>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Console</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="gnb__foot">
+                <ul class="header-etc__list">
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button">Sign in</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- //layer: GNB -->
+
+        <div class="contents-wrap">
+          <div class="page-contents page-contents--subscription">
+            <section class="sign-wrap">
+              <div class="sign-head">
+                <h2 class="sign-head__title">
+                  Please check the<br />
+                  payment <span class="inline-block">information.</span>
+                </h2>
+              </div>
+
+              <form action="">
+                <div class="product-card">
+                  <p class="product-card__title">Veterinary 001</p>
+                  <p class="product-card__text">100 won per case</p>
+                  <a href="" class="ui-basic-button ui-basic-button--secondary product-card__button">Change</a>
+                </div>
+
+                <section class="form-section">
+                  <div class="form-section__head">
+                    <h3 class="form-section__title">Ordering Person Information</h3>
+                  </div>
+
+                  <div class="info-list">
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Name</dt>
+                      <dd class="info-list__val">Hong Gil-dong</dd>
+                    </dl>
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Cell Phone</dt>
+                      <dd class="info-list__val">01045265874</dd>
+                    </dl>
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Email</dt>
+                      <dd class="info-list__val">Hong1789@gmail.com</dd>
+                    </dl>
+                  </div>
+                </section>
+
+                <section class="form-section">
+                  <div class="form-section__head">
+                    <h3 class="form-section__title">Payment Information</h3>
+                  </div>
+
+                  <!-- Case : 카드 등록 전 -->
+                  <button type="button" class="ui-button add-card">Add new card</button>
+                  <!-- //Case : 카드 등록 전 -->
+
+                  <!-- Case : 카드 등록 후 -->
+                  <div class="billing-card">
+                    <div class="billing-card__block">
+                      <p class="billing-card__name">HANA CARD (Representative)</p>
+                      <p class="billing-card__number">**** **** **** 7391</p>
+                    </div>
+                    <button type="button" class="ui-button billing-card__button">Change</button>
+                  </div>
+                  <!-- //Case : 카드 등록 후 -->
+                </section>
+
+                <div class="ui-buttons">
+                  <ul class="ui-buttons__list">
+                    <!-- 2021.12.22 : add : 이전 버튼 추가 -->
+                    <li class="ui-buttons__item">
+                      <a href="" class="ui-basic-button ui-basic-button--large ui-basic-button--quinary">Previous</a>
+                    </li>
+                    <!-- //2021.12.22 : add : 이전 버튼 추가 -->
+                    <li class="ui-buttons__item">
+                      <button type="submit" class="ui-button ui-basic-button ui-basic-button--large">Subscrition Now</button>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+          <nav class="footer-nav">
+            <div class="footer-nav__inner">
+              <h2 class="for-a11y">Footer Navigation Bar</h2>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Service</a>
+                  <ul class="footer-nav__depth-list">
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Veterinary</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Device</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Support</a>
+                  <ul class="footer-nav__depth-list">
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Notice</a>
+                    </li>
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">FAQ</a>
+                    </li>
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Help</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">My Page</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Console</a>
+                </li>
+              </ul>
+              <div class="footer-nav__call">
+                <p class="footer-nav__call-text">Do you have any questions?</p>
+                <a href="" class="footer-nav__call-link">Call us</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="footer__inner">
+            <ul class="footer__etc-nav">
+              <li class="footer__etc-nav-item">
+                <a href="" class="footer__etc-nav-link">Terms and Conditions</a>
+              </li>
+              <li class="footer__etc-nav-item">
+                <a href="" class="footer__etc-nav-link">Privacy Policy</a>
+              </li>
+            </ul>
+            <!-- 2021.12.17 : mod : 대소문자 수정 -->
+            <h1 class="footer__title">SK telecom</h1>
+            <!-- //2021.12.17 : mod : 대소문자 수정 -->
+            <address class="footer__address">
+              04539 65, Eulji-ro, Jung-gu, Seoul, Republic of Korea, <span class="inline-block">CEO Jung-ho, Park</span>
+            </address>
+            <!-- 2021.12.14 : add : 푸터 버튼 추가 -->
+            <div class="ui-buttons ui-buttons--center">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <a href="tel:02-6272-7582" class="ui-basic-button ui-basic-button--small ui-basic-button--quaternary">02-6272-7582</a>
+                </li>
+                <li class="ui-buttons__item">
+                  <a href="mailto:xcaliber@sktelecom.com" class="ui-basic-button ui-basic-button--small ui-basic-button--quaternary"
+                    >xcaliber@sktelecom.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- //2021.12.14 : add : 푸터 버튼 추가 -->
+            <p class="footer__copyright">Copyright SK Corp. All Right Reserved.</p>
+          </div>
+        </footer>
+        <!-- //footer -->
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <!-- //script -->
+  </body>
+</html>

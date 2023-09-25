@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none}.cls-1{stroke:#fff;stroke-width:1.5px}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="ic_lang" transform="translate(-1281 -106)">
+        <g id="타원_3" data-name="타원 3" class="cls-1" transform="translate(1281 106)">
+            <circle class="cls-3" cx="10" cy="10" r="10"/>
+            <circle class="cls-4" cx="10" cy="10" r="9.25"/>
+        </g>
+        <g id="타원_4" data-name="타원 4" class="cls-1" transform="translate(1286 106)">
+            <ellipse class="cls-3" cx="5" cy="10" rx="5" ry="10"/>
+            <ellipse class="cls-4" cx="5" cy="10" rx="4.25" ry="9.25"/>
+        </g>
+        <path id="사각형_5371" data-name="사각형 5371" transform="translate(1281 115.25)" style="fill:#fff" d="M0 0h20v1.5H0z"/>
+    </g>
+</svg>

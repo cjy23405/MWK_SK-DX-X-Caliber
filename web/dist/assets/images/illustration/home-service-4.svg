@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="116">
+    <defs>
+        <style>
+            .cls-2,.cls-6{fill:#fff}.cls-3{fill:#65c7dc}.cls-8{fill:none}.cls-6{stroke:#0e9ab9;stroke-width:2px}.cls-5{fill:#0e9ab9}.cls-7{stroke:none}
+        </style>
+    </defs>
+    <g id="img_service03" transform="translate(-1384 -2696)">
+        <path id="패스_2496" data-name="패스 2496" d="M6 0h74a6 6 0 0 1 6 6v98a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6a6 6 0 0 1 6-6z" transform="translate(1384 2702)" style="fill:#c2eaf3"/>
+        <path id="사각형_5516" data-name="사각형 5516" class="cls-2" d="M4 0h60a4 4 0 0 1 4 4v65a8 8 0 0 1-8 8H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" transform="translate(1393 2708)"/>
+        <path id="패스_2442" data-name="패스 2442" class="cls-3" d="M4.147 0h60.129a4.147 4.147 0 0 1 4.147 4.147V19.7a4.147 4.147 0 0 1-4.147 4.147H7.257A7.257 7.257 0 0 1 0 16.587V4.147A4.147 4.147 0 0 1 4.147 0z" transform="translate(1388.1 2761.201)"/>
+        <path id="사각형_5518" data-name="사각형 5518" class="cls-2" d="M0 0h18v22a9 9 0 0 1-9 9 9 9 0 0 1-9-9V0z" transform="translate(1443 2754)"/>
+        <rect id="사각형_5512" data-name="사각형 5512" class="cls-3" width="40" height="15" rx="4" transform="translate(1407 2696)"/>
+        <circle id="타원_17" data-name="타원 17" class="cls-2" cx="2" cy="2" r="2" transform="translate(1414 2702)"/>
+        <circle id="타원_18" data-name="타원 18" class="cls-2" cx="2" cy="2" r="2" transform="translate(1436 2702)"/>
+        <rect id="사각형_5512-2" data-name="사각형 5512" class="cls-2" width="30" height="4" rx="2" transform="translate(1393 2792)"/>
+        <rect id="사각형_5520" data-name="사각형 5520" class="cls-2" width="15" height="4" rx="2" transform="translate(1393 2799)"/>
+        <g id="사각형_5521" data-name="사각형 5521" style="stroke:#0e9ab9;stroke-width:2px;fill:none">
+            <path class="cls-7" d="M6 0h30a6 6 0 0 1 6 6v12H0V6a6 6 0 0 1 6-6z" transform="translate(1406 2739)"/>
+            <path class="cls-8" d="M6 1h30a5 5 0 0 1 5 5v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a5 5 0 0 1 5-5z" transform="translate(1406 2739)"/>
+        </g>
+        <path id="사각형_5522" data-name="사각형 5522" class="cls-2" transform="translate(1401 2753)" d="M0 0h52v8H0z"/>
+        <path id="사각형_5523" data-name="사각형 5523" class="cls-5" transform="translate(1425.939 2728.026)" d="M0 0h2.073v19.697H0z"/>
+        <g id="타원_19" data-name="타원 19" class="cls-6" transform="translate(1403 2750)">
+            <circle class="cls-7" cx="4" cy="4" r="4"/>
+            <circle class="cls-8" cx="4" cy="4" r="3"/>
+        </g>
+        <g id="타원_21" data-name="타원 21" class="cls-6" transform="translate(1443 2750)">
+            <circle class="cls-7" cx="4" cy="4" r="4"/>
+            <circle class="cls-8" cx="4" cy="4" r="3"/>
+        </g>
+        <g id="타원_20" data-name="타원 20" class="cls-6" transform="translate(1423 2746)">
+            <circle class="cls-7" cx="4" cy="4" r="4"/>
+            <circle class="cls-8" cx="4" cy="4" r="3"/>
+        </g>
+        <g id="그룹_2006" data-name="그룹 2006" transform="translate(1414.018 2716.623)">
+            <ellipse id="타원_15" data-name="타원 15" class="cls-5" cx="7.5" cy="7" rx="7.5" ry="7" transform="translate(3.982 .377)"/>
+            <rect id="사각형_5513" data-name="사각형 5513" class="cls-5" width="26" height="11" rx="5.5" transform="translate(-.018 7.377)"/>
+        </g>
+    </g>
+</svg>

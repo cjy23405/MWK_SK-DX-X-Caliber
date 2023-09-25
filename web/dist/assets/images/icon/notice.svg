@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".288" y1=".222" x2=".943" y2="1.678" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff706e"/>
+            <stop offset="1" stop-color="#782eff"/>
+        </linearGradient>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="ic_stop" transform="translate(-726 -1449)">
+        <path id="다각형_3" data-name="다각형 3" d="M10.285 2.858a2 2 0 0 1 3.43 0l8.468 14.113A2 2 0 0 1 20.468 20H3.532a2 2 0 0 1-1.715-3.029z" transform="translate(726 1449)" style="fill:url(#linear-gradient)"/>
+        <rect id="사각형_9559" data-name="사각형 9559" class="cls-2" width="2" height="7" rx="1" transform="translate(737 1456)"/>
+        <rect id="사각형_9560" data-name="사각형 9560" class="cls-2" width="2" height="2" rx="1" transform="translate(737 1464.5)"/>
+    </g>
+</svg>

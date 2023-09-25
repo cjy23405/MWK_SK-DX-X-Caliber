@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="layout-wrap">
+        <!-- fix top area -->
+        <div class="fix-top-wrap">
+          <!-- header -->
+          <header class="header">
+            <div class="header__inner">
+              <h1 class="header__logo">
+                <a href="" class="header__logo-link">
+                  <span class="for-a11y">X Caliber</span>
+                </a>
+              </h1>
+
+              <div class="header-gnb">
+                <ul class="header-gnb__list">
+                  <li class="header-gnb__item">
+                    <a href="" class="header-gnb__link">Service</a>
+                    <div class="header-gnb__depth">
+                      <ul class="header-gnb__depth-list">
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">Veterinary</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-gnb__item">
+                    <a href="" class="header-gnb__link">Device</a>
+                  </li>
+                  <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                  <li class="header-gnb__item is-active">
+                    <a href="" class="header-gnb__link">Support</a>
+                    <div class="header-gnb__depth">
+                      <ul class="header-gnb__depth-list">
+                        <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                        <li class="header-gnb__depth-item is-active">
+                          <a href="" class="header-gnb__depth-link">Notice</a>
+                        </li>
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">FAQ</a>
+                        </li>
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">Help</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="header-etc">
+                <ul class="header-etc__list">
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button header-etc__button--console">Console</a>
+                  </li>
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button">Sign in</a>
+                  </li>
+                </ul>
+
+                <div class="header-lang js-ui-dropdown">
+                  <div class="header-lang__head">
+                    <span class="header-lang__text">ENG</span>
+                    <button type="button" class="ui-button header-lang__opener js-ui-dropdown__opener">
+                      <span class="for-a11y">
+                        change language
+                        <span class="open-text">open</span>
+                        <span class="close-text">close</span>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="header-lang__layer js-ui-dropdown__layer">
+                    <div class="header-lang__contents">
+                      <ul class="header-lang__list">
+                        <li class="header-lang__item">
+                          <a href="" class="header-lang__link">ENG</a>
+                        </li>
+                        <li class="header-lang__item">
+                          <a href="" class="header-lang__link">KOR</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="ui-button header-menu" data-layer-open="layer-gnb">
+                  <span class="for-a11y">Global Navigation Bar Open</span>
+                </button>
+              </div>
+            </div>
+          </header>
+          <!-- //header -->
+        </div>
+        <!-- //fix top area -->
+
+        <!-- layer: GNB -->
+        <div class="layer-wrap layer-gnb" data-layer="layer-gnb">
+          <div class="layer-container">
+            <nav class="gnb">
+              <div class="gnb__head">
+                <h2 class="for-a11y">Global Navigation Bar</h2>
+                <div class="gnb__logo">
+                  <a href="" class="gnb__logo-link">
+                    <span class="for-a11y">X Caliber</span>
+                  </a>
+                </div>
+                <button type="button" class="ui-button gnb__close" data-role="layerClose">
+                  <span class="for-a11y">close</span>
+                </button>
+              </div>
+
+              <div class="gnb__body">
+                <div class="gnb__body-inner">
+                  <ul class="gnb__list">
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Service</a>
+                        <button type="button" class="ui-button gnb__opener">
+                          <span class="for-a11y">
+                            Submenu
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="gnb__depth">
+                        <ul class="gnb__depth-list">
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">Veterinary</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Device</a>
+                      </div>
+                    </li>
+                    <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                    <li class="gnb__item is-active">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Support</a>
+                        <button type="button" class="ui-button gnb__opener">
+                          <span class="for-a11y">
+                            Submenu
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="gnb__depth">
+                        <ul class="gnb__depth-list">
+                          <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                          <li class="gnb__depth-item is-active">
+                            <a href="" class="gnb__depth-link">Notice</a>
+                          </li>
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">FAQ</a>
+                          </li>
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">Help</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">My Page</a>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Console</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="gnb__foot">
+                <ul class="header-etc__list">
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button">Sign in</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- //layer: GNB -->
+
+        <div class="contents-wrap">
+          <div class="page-contents page-contents--home">
+            <div class="home-top">
+              <p class="home-top__big-text">
+                The most optimized AI Platform<br />
+                <span class="color-sky">for DX imaging Device</span>
+              </p>
+              <p class="home-top__text">
+                Without upgrade or replacement of <span class="inline-block">DX imaging device,</span>
+                <span class="inline-block">the latest AI technology</span><br />
+                and service can be immediately <span class="inline-block">adapted to your business through</span>
+                <span class="inline-block">network</span>
+              </p>
+              <!-- DD : 로그인 후 이 영역 제거 -->
+              <form action="">
+                <div class="form-flex home-top__form">
+                  <div class="form-flex-cell form-flex-cell--flexible">
+                    <!-- 2021.12.15 : mod : 에러 메세지 추가 -->
+                    <!-- 인풋 에러시 .ui-require-check 에 is-error 클래스 값 추가 -->
+                    <div class="ui-require-check">
+                      <div class="ui-input-block ui-input-block--white">
+                        <input type="text" class="ui-input" title="ID (Email)" placeholder="ID (Email)" />
+                      </div>
+                      <p class="ui-require-check__message">Error Message.</p>
+                    </div>
+                    <!-- //2021.12.15 : mod : 에러 메세지 추가 -->
+                  </div>
+                  <div class="form-flex-cell">
+                    <button type="submit" class="ui-button ui-basic-button ui-basic-button--icon ui-basic-button--icon-arrow-2">Getting Start</button>
+                  </div>
+                </div>
+                <div class="form-flex home-top__form">
+                  <div class="form-flex-cell form-flex-cell--flexible">
+                    <!-- 2021.12.15 : mod : 에러 메세지 추가 -->
+                    <!-- 인풋 에러시 .ui-require-check 에 is-error 클래스 값 추가 -->
+                    <div class="ui-require-check is-error">
+                      <div class="ui-input-block ui-input-block--white">
+                        <input type="text" class="ui-input" title="ID (Email)" placeholder="ID (Email)" />
+                      </div>
+                      <p class="ui-require-check__message">Error Message.</p>
+                    </div>
+                    <!-- //2021.12.15 : mod : 에러 메세지 추가 -->
+                  </div>
+                  <div class="form-flex-cell">
+                    <button type="submit" class="ui-button ui-basic-button ui-basic-button--icon ui-basic-button--icon-arrow-2">Getting Start</button>
+                  </div>
+                </div>
+              </form>
+              <!-- //DD : 로그인 후 이 영역 제거 -->
+            </div>
+
+            <!-- Case : 로그인 후 - 구독한 서비스 있을 때 -->
+            <section class="home-section home-section--subscription">
+              <div class="home-section__head">
+                <h2 class="home-section__title">SUBSCRIPTION SERVICE</h2>
+              </div>
+              <div class="contents-width">
+                <!-- DD : Vue로 데이터 로드시 이 영역을 다시 뿌려준 후 uiJSCommon(); 호출해주세요.(슬라이드 기능 관련) -->
+                <div class="service-cards service-cards--console">
+                  <div class="service-cards__controller"></div>
+                  <ul class="service-cards__list">
+                    <li class="service-cards__item">
+                      <a href="" class="service-cards__block service-cards__block--link">
+                        <div class="service-cards__title">For My Cat</div>
+                      </a>
+                    </li>
+                    <li class="service-cards__item">
+                      <a href="" class="service-cards__block service-cards__block--link">
+                        <div class="service-cards__title">Dog X-RAY</div>
+                      </a>
+                    </li>
+                    <li class="service-cards__item">
+                      <a href="" class="service-cards__block service-cards__block--link">
+                        <div class="service-cards__title">CT Pet AI For my Dog</div>
+                      </a>
+                    </li>
+                    <li class="service-cards__item">
+                      <a href="" class="service-cards__block service-cards__block--link">
+                        <div class="service-cards__title">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- //DD : Vue로 데이터 로드시 이 영역을 다시 뿌려준 후 uiJSCommon(); 호출해주세요.(슬라이드 기능 관련) -->
+              </div>
+            </section>
+            <!-- //Case : 로그인 후 - 구독한 서비스 있을 때 -->
+
+            <!-- Case : 로그인 후 - 구독한 서비스 없을 때 -->
+            <section class="home-section home-section--subscription">
+              <div class="home-section__head">
+                <h2 class="home-section__title">SUBSCRIPTION SERVICE</h2>
+              </div>
+              <div class="contents-width">
+                <a href="" class="home-subscription-add">
+                  <span class="home-subscription-add__text">Go subscribe</span>
+                </a>
+              </div>
+            </section>
+            <!-- //Case : 로그인 후 - 구독한 서비스 없을 때 -->
+
+            <div class="home-slide">
+              <ul class="home-slide__list">
+                <!-- Case : 링크가 있을 때 -->
+                <li class="home-slide__item">
+                  <a href="" class="home-slide__block">
+                    <img src="./assets/images/_dummy/banner1.png" alt="" class="home-slide__img home-slide__img--pc" />
+                    <img src="./assets/images/_dummy/banner1--tablet.png" alt="" class="home-slide__img home-slide__img--tablet" />
+                    <img src="./assets/images/_dummy/banner1--mobile.png" alt="" class="home-slide__img home-slide__img--mobile" />
+                  </a>
+                </li>
+
+                <!-- Case : 링크가 없을 때 -->
+                <li class="home-slide__item">
+                  <div class="home-slide__block">
+                    <img src="./assets/images/_dummy/banner2.png" alt="" class="home-slide__img home-slide__img--pc" />
+                    <img src="./assets/images/_dummy/banner2--tablet.png" alt="" class="home-slide__img home-slide__img--tablet" />
+                    <img src="./assets/images/_dummy/banner2--mobile.png" alt="" class="home-slide__img home-slide__img--mobile" />
+                  </div>
+                </li>
+
+                <li class="home-slide__item">
+                  <a href="" class="home-slide__block">
+                    <img src="./assets/images/_dummy/banner3.png" alt="" class="home-slide__img home-slide__img--pc" />
+                    <img src="./assets/images/_dummy/banner3--tablet.png" alt="" class="home-slide__img home-slide__img--tablet" />
+                    <img src="./assets/images/_dummy/banner3--mobile.png" alt="" class="home-slide__img home-slide__img--mobile" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <section class="home-section">
+              <div class="home-section__head">
+                <h2 class="home-section__title">AI SERVICE</h2>
+                <p class="home-section__text">
+                  Get AI-based services specialized for each business area<br />
+                  without complex hardware upgrades.
+                </p>
+              </div>
+              <div class="contents-width">
+                <div class="home-service">
+                  <ul class="home-service__list">
+                    <li class="home-service__item">
+                      <div class="home-service__block">
+                        <h3 class="home-service__title">
+                          Veterinary <span class="inline-block">diagnostic</span><br />
+                          AI assistance
+                        </h3>
+                        <p class="home-service__text">
+                          Advanced AI analyzes <span class="inline-block">X-ray images</span><br />
+                          of companion animals<br />
+                          to assist veterinarians<br />
+                          to make an accurate diagnosis
+                        </p>
+                        <a href="" class="home-service__link">
+                          <span class="for-a11y">view</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="home-service__item">
+                      <div class="home-service__block">
+                        <h3 class="home-service__title">
+                          Veterinary<br />
+                          Web PACS
+                        </h3>
+                        <p class="home-service__text">
+                          PACS for imaging diagnosis<br />
+                          devices can be easily used<br />
+                          on the web<br />
+                          based on the Cloud
+                        </p>
+                        <a href="" class="home-service__link">
+                          <span class="for-a11y">view</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="home-service__item">
+                      <div class="home-service__block">
+                        <h3 class="home-service__title">Pet Scanner</h3>
+                        <a href="" class="home-service__link">
+                          <span class="for-a11y">view</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="home-service__item">
+                      <div class="home-service__block">
+                        <h3 class="home-service__title">
+                          Cloud<br />
+                          EMR
+                        </h3>
+                        <p class="home-service__text">
+                          Based on the Cloud,<br />
+                          diagnostic chart of companion<br />
+                          animal can be managed<br />
+                          from anywhere
+                        </p>
+                        <div class="home-service__soon">Coming Soon</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <div class="home-catalog">
+              <section class="home-catalog__section">
+                <h2 class="home-catalog__title">
+                  Convenient<br />
+                  <mark>web-based console</mark>
+                </h2>
+                <p class="home-catalog__text">
+                  Without complicated installation and setup procedures, AI service can be instanly used if the internet connection is available
+                  Regardless of time and place, feel free to make use of the AI service for imaging devices based on HTML5-enabled web browsers such
+                  as Google Chorme, Microsoft Edge, and Naver Whales.
+                </p>
+              </section>
+              <section class="home-catalog__section">
+                <h2 class="home-catalog__title">
+                  No extra cost,<br />
+                  <mark>all for one fixed <span class="inline-block">monthly fee</span></mark>
+                </h2>
+                <p class="home-catalog__text">
+                  If you have a credit card, a variety of AI services can be used at low cost. Subscribe to the best suited products for your business
+                  style, and find the most optimized billing options, such as a pay-as-you-go system that pays only for what you use, or a flat-rate
+                  monthly subscription
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+          <nav class="footer-nav">
+            <div class="footer-nav__inner">
+              <h2 class="for-a11y">Footer Navigation Bar</h2>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Service</a>
+                  <ul class="footer-nav__depth-list">
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Veterinary</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Device</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Support</a>
+                  <ul class="footer-nav__depth-list">
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Notice</a>
+                    </li>
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">FAQ</a>
+                    </li>
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Help</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">My Page</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Console</a>
+                </li>
+              </ul>
+              <div class="footer-nav__call">
+                <p class="footer-nav__call-text">Do you have any questions?</p>
+                <a href="" class="footer-nav__call-link">Call us</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="footer__inner">
+            <ul class="footer__etc-nav">
+              <li class="footer__etc-nav-item">
+                <a href="" class="footer__etc-nav-link">Terms and Conditions</a>
+              </li>
+              <li class="footer__etc-nav-item">
+                <a href="" class="footer__etc-nav-link">Privacy Policy</a>
+              </li>
+            </ul>
+            <!-- 2021.12.17 : mod : 대소문자 수정 -->
+            <h1 class="footer__title">SK telecom</h1>
+            <!-- //2021.12.17 : mod : 대소문자 수정 -->
+            <address class="footer__address">
+              04539 65, Eulji-ro, Jung-gu, Seoul, Republic of Korea, <span class="inline-block">CEO Jung-ho, Park</span>
+            </address>
+            <!-- 2021.12.14 : add : 푸터 버튼 추가 -->
+            <div class="ui-buttons ui-buttons--center">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <a href="tel:02-6272-7582" class="ui-basic-button ui-basic-button--small ui-basic-button--quaternary">02-6272-7582</a>
+                </li>
+                <li class="ui-buttons__item">
+                  <a href="mailto:xcaliber@sktelecom.com" class="ui-basic-button ui-basic-button--small ui-basic-button--quaternary"
+                    >xcaliber@sktelecom.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- //2021.12.14 : add : 푸터 버튼 추가 -->
+            <p class="footer__copyright">Copyright SK Corp. All Right Reserved.</p>
+          </div>
+        </footer>
+        <!-- //footer -->
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <!-- //script -->
+  </body>
+</html>

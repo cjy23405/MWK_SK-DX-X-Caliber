@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-dormant-member">휴면회원 안내</a>
+
+    <!-- layer: 휴면회원 안내 -->
+    <div class="layer-wrap layer-wrap--primary layer-dormant-member" data-layer="layer-dormant-member">
+      <div class="layer-container">
+        <section class="ui-layer">
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="sign-head">
+                <h2 class="sign-head__title">
+                  Your account<br />
+                  has been <span class="inline-block">inactivated.</span>
+                </h2>
+                <!-- 2021.11.16 : mod : 문구 수정 -->
+                <p class="sign-head__text">
+                  You have been deactivated due to <span class="inline-block">inactivity</span>
+                  <span class="inline-block">of the service for more</span> <span class="inline-block">than a year</span>
+                </p>
+                <!-- //2021.11.16 : mod : 문구 수정 -->
+              </div>
+
+              <div class="ui-layer-message">inactivated date: 2021.11.02</div>
+
+              <p class="basic-text basic-text--medium align-center">
+                <span class="color-gray">
+                  If you want to use the service,<br />
+                  please click the “Confirm” button <span class="inline-block">below.</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="ui-layer__foot">
+            <div class="ui-buttons">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button" data-role="layerClose">Confirm</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: 휴면회원 안내 -->
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다.
+      $(function () {
+        uiJSLayer.open('layer-dormant-member');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

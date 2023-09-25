@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  background-color: #01082b;
+}
+
+/* first/last */
+.terms-text:first-child,
+.terms-table:first-child,
+.terms-list:first-child {
+  margin-top: 0;
+}
+.terms-text:last-child,
+.terms-table:last-child,
+.terms-list:last-child {
+  margin-bottom: 0;
+}
+
+/* terms-text */
+.terms-text {
+  margin: 30px 0;
+}
+
+/* terms-table */
+.terms-table {
+  margin: 30px 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.terms-table__inner {
+  min-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 2px solid #4e536b;
+  font-size: 14px;
+  line-height: 19px;
+}
+.terms-table__inner > table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+.terms-table__inner > table > thead > tr > th,
+.terms-table__inner > table > tbody > tr > th,
+.terms-table__inner > table > tbody > tr > td {
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: middle;
+  padding: 16px 14px;
+  word-break: break-all;
+  border-bottom: 1px solid #2a304d;
+}
+.terms-table__inner > table > thead > tr > th + th,
+.terms-table__inner > table > tbody > tr > th + th,
+.terms-table__inner > table > tbody > tr > th + td,
+.terms-table__inner > table > tbody > tr > td + td,
+.terms-table__inner > table > tbody > tr > td + th {
+  border-left: 1px solid #2a304d;
+}
+.terms-table__inner > table > thead > tr > th {
+  color: #a0a5b9;
+}
+
+/* terms-list */
+.terms-list {
+  margin: 30px 0;
+  padding: 0;
+  list-style: none;
+}
+.terms-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.terms-list__item + .terms-list__item {
+  margin-top: 16px;
+}
+.terms-list__symbol {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  margin-right: 6px;
+}
+.terms-list__text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 0;
+}
+
+/* terms-link */
+.terms-link {
+  color: inherit;
+  text-decoration: underline;
+}

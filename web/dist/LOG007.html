@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-logging-in-to-another-device">다른 세션 로그인 중</a>
+
+    <!-- layer: 다른 세션 로그인 중 -->
+    <div class="layer-wrap layer-alert" data-layer="layer-logging-in-to-another-device">
+      <div class="layer-container">
+        <section class="ui-layer">
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="alert-head">
+                <!-- 2021.11.16 : mod : 문구 수정 -->
+                <h2 class="alert-head__title">
+                  The service is <span class="inline-block">being used</span> <span class="inline-block">by another</span>
+                  <span class="inline-block">device.</span>
+                </h2>
+                <!-- //2021.11.16 : mod : 문구 수정 -->
+              </div>
+
+              <!-- 2021.11.16 : mod : 문구 수정 -->
+              <div class="alert-message">
+                If you sign into an additional device while logged into another device of the same type, the first connected device will be
+                automatically logged out.
+              </div>
+              <!-- //2021.11.16 : mod : 문구 수정 -->
+            </div>
+          </div>
+          <div class="ui-layer__foot">
+            <div class="ui-buttons">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button ui-basic-button--quinary" data-role="layerClose">Cancel</button>
+                </li>
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button" data-role="layerClose">Confirm</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: 다른 세션 로그인 중 -->
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다.
+      $(function () {
+        uiJSLayer.open('layer-logging-in-to-another-device');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

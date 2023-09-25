@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="110">
+    <defs>
+        <style>
+            .cls-2{fill:#78a1ff}.cls-3{fill:#fdfcf2}
+        </style>
+    </defs>
+    <g id="img_service02" transform="translate(-1383.953 -2342)">
+        <g id="그룹_2721" data-name="그룹 2721" transform="translate(1384 2342)">
+            <g id="그룹_2008" data-name="그룹 2008">
+                <rect id="사각형_5488" data-name="사각형 5488" width="85.953" height="110" rx="6" style="fill:#bed5ff"/>
+                <path id="패스_2438" data-name="패스 2438" class="cls-2" d="M4.411 0h55.132a4.3 4.3 0 0 1 4.411 4.182v37.636A4.3 4.3 0 0 1 59.543 46H4.411A4.3 4.3 0 0 1 0 41.818V4.182A4.3 4.3 0 0 1 4.411 0z" transform="translate(11.001 14)"/>
+                <rect id="사각형_5510" data-name="사각형 5510" class="cls-3" width="44" height="4" rx="2" transform="translate(11 66)"/>
+                <rect id="사각형_5524" data-name="사각형 5524" class="cls-3" width="63.953" height="4" rx="2" transform="translate(11 74)"/>
+                <rect id="사각형_5525" data-name="사각형 5525" class="cls-3" width="22" height="4" rx="2" transform="translate(11 82)"/>
+                <rect id="사각형_5526" data-name="사각형 5526" width="32" height="12" rx="4" transform="translate(26.977 92)" style="fill:#2d50ff"/>
+            </g>
+            <g id="그룹_2009" data-name="그룹 2009" transform="translate(20.977 22)">
+                <g id="사각형_5527" data-name="사각형 5527" style="stroke:#fdfcf2;stroke-width:2px;fill:none">
+                    <rect width="46" height="29" rx="4" style="stroke:none"/>
+                    <rect x="1" y="1" width="44" height="27" rx="3" style="fill:none"/>
+                </g>
+                <circle id="타원_22" data-name="타원 22" class="cls-3" cx="2.5" cy="2.5" r="2.5" transform="translate(7 5)"/>
+                <path id="다각형_1" data-name="다각형 1" class="cls-3" d="M11.712 1.009a1 1 0 0 1 1.576 0l10.45 13.376A1 1 0 0 1 22.95 16H2.05a1 1 0 0 1-.788-1.616z" transform="translate(16 7)"/>
+                <path id="다각형_2" data-name="다각형 2" class="cls-3" d="M7.815.645a1 1 0 0 1 1.371 0l5.978 5.627A1 1 0 0 1 14.478 8H2.522a1 1 0 0 1-.685-1.728z" transform="translate(4 15)"/>
+            </g>
+        </g>
+        <path id="패스_2439" data-name="패스 2439" d="M4.408 0h77.138c2.434 0 4.408 2.388 4.408 5.333V8H0V5.333C0 2.388 1.973 0 4.408 0z" transform="translate(1383.953 2342)" style="fill:#fff"/>
+        <rect id="사각형_5534" data-name="사각형 5534" class="cls-2" width="12" height="3" rx="1.5" transform="translate(1445.953 2345)"/>
+    </g>
+</svg>

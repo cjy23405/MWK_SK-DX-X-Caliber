@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+    <defs>
+        <style>
+            .cls-2{fill:#666982}
+        </style>
+    </defs>
+    <g id="tn_more_s" transform="translate(-1378 -639)">
+        <circle id="타원_857" data-name="타원 857" class="cls-2" cx="2" cy="2" r="2" transform="translate(1392 646)"/>
+        <circle id="타원_858" data-name="타원 858" class="cls-2" cx="2" cy="2" r="2" transform="translate(1392 653)"/>
+        <circle id="타원_859" data-name="타원 859" class="cls-2" cx="2" cy="2" r="2" transform="translate(1392 660)"/>
+    </g>
+</svg>

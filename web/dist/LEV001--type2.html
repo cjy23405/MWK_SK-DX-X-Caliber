@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-membership-cancellation">회원탈퇴</a>
+
+    <!-- layer: 회원탈퇴 -->
+    <div class="layer-wrap layer-wrap--primary layer-membership-cancellation" data-layer="layer-membership-cancellation">
+      <div class="layer-container">
+        <section class="ui-layer">
+          <div class="ui-layer__head">
+            <div class="ui-layer-header">
+              <div class="ui-layer-header__right">
+                <button type="button" class="ui-button ui-layer-header__btn ui-layer-header__btn--close" data-role="layerClose">
+                  <span class="for-a11y">close</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="sign-head">
+                <h2 class="sign-head__title">
+                  Sorry, <span class="inline-block">membership</span> <span class="inline-block">cancellation</span>
+                  <span class="inline-block">is not possible</span>
+                </h2>
+                <p class="sign-head__text">
+                  <span class="color-red">
+                    Due to the following cases, <span class="inline-block">cancellation may not be</span>
+                    <span class="inline-block">possible.</span>
+                    <span class="inline-block">Please check and try again.</span>
+                  </span>
+                </p>
+              </div>
+
+              <div class="ui-hr-secondary"></div>
+
+              <ul class="case-list">
+                <li class="case-list__item">
+                  <div class="case-list__title">Case # 01. If you have an outstanding balance</div>
+                  <div class="case-list__contents">- Retry after paying your outstanding balance</div>
+                </li>
+                <li class="case-list__item">
+                  <div class="case-list__title">Case #02. If you are under the service subscription</div>
+                  <div class="case-list__contents">- Retry after canceling your subscription</div>
+                </li>
+                <li class="case-list__item">
+                  <div class="case-list__title">Case #03. If other members (other than yourself) exist</div>
+                  <div class="case-list__contents">- Retry after transferring the representative right to other member</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ui-layer__foot">
+            <div class="ui-buttons">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button ui-basic-button--large" data-role="layerClose">Confirm</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: 회원탈퇴 -->
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다.
+      $(function () {
+        uiJSLayer.open('layer-membership-cancellation');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

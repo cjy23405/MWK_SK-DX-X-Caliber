@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <defs>
+        <style>
+            .cls-2{fill:#1a203d}.cls-3{fill:#2a304d}.cls-4{fill:#4e536b}
+        </style>
+    </defs>
+    <g id="img_inauiry_d" transform="translate(-696 -922)">
+        <path id="사각형_9574" data-name="사각형 9574" class="cls-2" d="M4 0h30a4 4 0 0 1 4 4v26H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" transform="translate(705 923)"/>
+        <path id="다각형_5" data-name="다각형 5" class="cls-2" d="M7.293.707a1 1 0 0 1 1.414 0l5.586 5.586A1 1 0 0 1 13.586 8H2.414a1 1 0 0 1-.707-1.707z" transform="rotate(-90 847.5 112.5)"/>
+        <path id="사각형_9573" data-name="사각형 9573" class="cls-3" d="M4 0h30a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H0V4a4 4 0 0 1 4-4z" transform="translate(697 932)"/>
+        <path id="다각형_4" data-name="다각형 4" class="cls-3" d="M7.293.707a1 1 0 0 1 1.414 0l5.586 5.586A1 1 0 0 1 13.586 8H2.414a1 1 0 0 1-.707-1.707z" transform="rotate(90 -124 829)"/>
+        <rect id="사각형_9575" data-name="사각형 9575" class="cls-4" width="24" height="2" rx="1" transform="translate(704 942)"/>
+        <rect id="사각형_9576" data-name="사각형 9576" class="cls-4" width="17" height="2" rx="1" transform="translate(705 948)"/>
+    </g>
+</svg>

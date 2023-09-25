@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <!-- 2021.09.30 : mod : 태블릿, 모바일 css 제거 및 pdf css 추가 -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--pdf.css" />
+    <!-- //2021.09.30 : mod : 태블릿, 모바일 css 제거 및 pdf css 추가 -->
+    <!-- //style -->
+  </head>
+  <body>
+    <div class="document document--cover">
+      <div class="document-cover-head">
+        <div class="document-cover-head__logo"></div>
+        <div class="document-cover-head__hr"></div>
+        <h1 class="document-cover-head__title">Analysis Report</h1>
+        <!-- 2021.10.08 : add : 문구 추가 -->
+        <div class="document-cover-head__url">www.xcaliber.ai</div>
+        <!-- //2021.10.08 : add : 문구 추가 -->
+      </div>
+
+      <div class="info-list info-list--report">
+        <dl class="info-list__item">
+          <dt class="info-list__key">Analysis ID</dt>
+          <dd class="info-list__val">ABC00020</dd>
+        </dl>
+        <dl class="info-list__item">
+          <!-- 2021.10.08 : mod : 오타 수정 -->
+          <dt class="info-list__key">Reg Date</dt>
+          <!-- //2021.10.08 : mod : 오타 수정 -->
+          <dd class="info-list__val">2021.08.23 13:00</dd>
+        </dl>
+        <dl class="info-list__item">
+          <dt class="info-list__key">Patient Name</dt>
+          <dd class="info-list__val">Mozzi</dd>
+        </dl>
+        <dl class="info-list__item">
+          <dt class="info-list__key">Guardian Name</dt>
+          <dd class="info-list__val">서강원</dd>
+        </dl>
+      </div>
+
+      <!-- 2021.10.08 : add : 로고 추가 -->
+      <div class="document-cover__bi"></div>
+      <!-- //2021.10.08 : add : 로고 추가 -->
+    </div>
+
+    <!-- DD : Vue로 데이터 로드 되는거라면 이 영역이 뿌려진 후 uiJSCommon(); 호출해주세요. (엑스레이 포지션 값 관련) -->
+    <div class="document">
+      <div class="billing-info">
+        <div class="billing-info__item">
+          <div class="billing-info__head billing-info__head--console-report">
+            <div class="billing-info__cell">
+              <!-- 2022.07.29 : mod : 문구 수정 (케이스 변경 및 추가) -->
+              <div class="billing-info__title">Image 01 (Musculoskeletal)</div>
+              <div class="billing-info__discription">Detected</div>
+              <!-- //2022.07.29 : mod : 문구 수정 (케이스 변경 및 추가) -->
+            </div>
+          </div>
+          <div class="billing-info__layer">
+            <div class="billing-info__contents billing-info__contents--console-report">
+              <!--
+                DD :
+                
+                data-origin-width = 원본 사진 너비 지정
+                data-origin-height = 원본 사진 높이 지정
+              -->
+              <div class="console-report-view" data-origin-width="1660" data-origin-height="1023">
+                <img src="./assets/images/_dummy/x-ray.jpg" alt="" class="console-report-view__img" />
+                <!--
+                  DD :
+                  data-position = 사각형 포지션 값 지정
+                -->
+                <!-- 2021.11.09 : mod : 박스와 넘버링 분리 -->
+                <div class="console-report-view__item" data-position="82, 64, 362, 277"></div>
+
+                <div class="console-report-view__item" data-position="568, 459, 914, 731"></div>
+
+                <div class="console-report-view__item" data-position="1178, 609, 1538, 885"></div>
+
+                <div class="console-report-view__item" data-position="931, 564, 1208, 775"></div>
+
+                <div class="console-report-view__num" data-position="82, 64">01</div>
+
+                <div class="console-report-view__num" data-position="568, 459">02</div>
+
+                <div class="console-report-view__num" data-position="1178, 609">03</div>
+
+                <div class="console-report-view__num" data-position="931, 564">04</div>
+                <!-- //2021.11.09 : mod : 박스와 넘버링 분리 -->
+              </div>
+              <section class="form-section form-section--console-report">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">Analysis Detail</h4>
+                </div>
+                <dl class="info-list__item info-list__item--report">
+                  <dt class="info-list__key">Rectangle 01</dt>
+                  <dd class="info-list__val">
+                    <div class="report-progress report-progress--red">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left">popliteal lymphnode enlargement</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">95.00%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 95%"></div>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="info-list__item info-list__item--report">
+                  <dt class="info-list__key">Rectangle 02</dt>
+                  <dd class="info-list__val">
+                    <div class="report-progress report-progress--yellow">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left">fascial plane deviation</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">38.21%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 38.21%"></div>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="info-list__item info-list__item--report">
+                  <dt class="info-list__key">Rectangle 03</dt>
+                  <dd class="info-list__val">
+                    <div class="report-progress report-progress--sky">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left">medial patella luxation</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">17.52%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 17.52%"></div>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="document">
+      <div class="billing-info">
+        <div class="billing-info__item">
+          <div class="billing-info__head billing-info__head--console-report">
+            <div class="billing-info__cell">
+              <!-- 2022.07.29 : mod : 문구 수정 (케이스 변경 및 추가) -->
+              <div class="billing-info__title">Image 02 (Thorax)</div>
+              <div class="billing-info__discription">Analysis Completed</div>
+              <!-- //2022.07.29 : mod : 문구 수정 (케이스 변경 및 추가) -->
+            </div>
+          </div>
+          <div class="billing-info__layer">
+            <div class="billing-info__contents billing-info__contents--console-report">
+              <!--
+                DD :
+                
+                data-origin-width = 원본 사진 너비 지정
+                data-origin-height = 원본 사진 높이 지정
+              -->
+              <div class="console-report-view" data-origin-width="1660" data-origin-height="1023">
+                <img src="./assets/images/_dummy/x-ray.jpg" alt="" class="console-report-view__img" />
+                <!--
+                  DD :
+                  data-position = 사각형 포지션 값 지정
+                -->
+                <!-- 2021.11.09 : mod : 박스와 넘버링 분리 -->
+                <div
+                  class="console-report-view__item"
+                  data-position="556.454345703125, 595.0839233398438, 694.0184936523438, 736.1505737304688"
+                ></div>
+
+                <div
+                  class="console-report-view__item"
+                  data-position="427.6648864746094, 649.9225463867188, 515.9447631835938, 735.1785278320312"
+                ></div>
+
+                <div
+                  class="console-report-view__item"
+                  data-position="444.12530517578125, 668.080810546875, 504.6216735839844, 722.5277099609375"
+                ></div>
+
+                <div class="console-report-view__item" data-position="410.0047302246094, 626.85546875, 546.2962036132812, 762.4275512695312"></div>
+
+                <div class="console-report-view__num" data-position="556.454345703125, 595.0839233398438">01</div>
+
+                <div class="console-report-view__num" data-position="427.6648864746094, 649.9225463867188">02</div>
+
+                <div class="console-report-view__num" data-position="444.12530517578125, 668.080810546875">03</div>
+
+                <div class="console-report-view__num" data-position="410.0047302246094, 626.85546875">04</div>
+                <!-- //2021.11.09 : mod : 박스와 넘버링 분리 -->
+              </div>
+              <section class="form-section form-section--console-report">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">Analysis Detail</h4>
+                </div>
+                <!-- 2022.07.29 : mod : 항목 구성 케이스 추가 -->
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--red">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Generalized Cardiomegaly</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">95.00%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 95%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--yellow">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Left Artrium Enlargement</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">38.21%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 38.21%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--sky">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Tracheal Collapse</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">17.52%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 17.52%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--red">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Mediastinal Shift</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">95.00%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 95%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--yellow">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Thoracic Mass</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">38.21%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 38.21%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--sky">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Diffuse Parenchymal Pattern</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">17.52%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 17.52%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--red">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Bronchial Pattern</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">95.00%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 95%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--yellow">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Cranioventral Parenchymal Pattern</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">38.21%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 38.21%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-list__item info-list__item--report">
+                  <div class="info-list__key">
+                    <div class="report-progress report-progress--sky">
+                      <div class="report-progress__text">
+                        <div class="report-progress__text-left color-primary">Caudodorsal Parenchymal Pattern</div>
+                        <div class="report-progress__text-right">
+                          <strong class="report-progress__value">17.52%</strong>
+                        </div>
+                      </div>
+                      <div class="report-progress__bar">
+                        <div class="report-progress__bar-inner" style="width: 17.52%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //2022.07.29 : mod : 항목 구성 케이스 추가 -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="document">
+      <div class="billing-info">
+        <div class="billing-info__item">
+          <div class="billing-info__head billing-info__head--console-report">
+            <div class="billing-info__cell">
+              <!-- 2022.07.29 : mod : 문구 수정 (케이스 변경 및 추가) -->
+              <div class="billing-info__title">Image 03 (VHS)</div>
+              <div class="billing-info__discription">Analysis Completed</div>
+              <!-- //2022.07.29 : mod : 문구 수정 (케이스 변경 및 추가) -->
+            </div>
+          </div>
+          <div class="billing-info__layer">
+            <div class="billing-info__contents billing-info__contents--console-report">
+              <!--
+                DD :
+                
+                data-origin-width = 원본 사진 너비 지정
+                data-origin-height = 원본 사진 높이 지정
+              -->
+              <div class="console-report-view" data-origin-width="1660" data-origin-height="1023">
+                <img src="./assets/images/_dummy/x-ray.jpg" alt="" class="console-report-view__img" />
+                <!--
+                  DD :
+                  data-position = 사각형 포지션 값 지정
+                -->
+                <!-- 2021.11.09 : mod : 박스와 넘버링 분리 -->
+                <div class="console-report-view__item" data-position="82, 64, 362, 277"></div>
+
+                <div class="console-report-view__item" data-position="568, 459, 914, 731"></div>
+
+                <div class="console-report-view__item" data-position="1178, 609, 1538, 885"></div>
+
+                <div class="console-report-view__item" data-position="931, 564, 1208, 775"></div>
+
+                <div class="console-report-view__num" data-position="82, 64">01</div>
+
+                <div class="console-report-view__num" data-position="568, 459">02</div>
+
+                <div class="console-report-view__num" data-position="1178, 609">03</div>
+
+                <div class="console-report-view__num" data-position="931, 564">04</div>
+                <!-- //2021.11.09 : mod : 박스와 넘버링 분리 -->
+              </div>
+              <!-- 2022.07.29 : mod : 항목 구성 케이스 추가 -->
+              <section class="form-section form-section--console-report">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">Analysis Detail</h4>
+                </div>
+                <div class="code">
+                  <div class="code__text">VHS: 10.3</div>
+                </div>
+              </section>
+              <section class="form-section form-section--console-report">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">Reference</h4>
+                </div>
+                <ul class="basic-list">
+                  <li class="basic-list__item">
+                    <div class="basic-list__symbol">-</div>
+                    <div class="basic-list__contents">Accepted normal VHS range: 9.2~10.5</div>
+                  </li>
+                  <li class="basic-list__item">
+                    <div class="basic-list__symbol">-</div>
+                    <div class="basic-list__contents">Boxer: 10.8~12.4</div>
+                  </li>
+                  <li class="basic-list__item">
+                    <div class="basic-list__symbol">-</div>
+                    <div class="basic-list__contents">Bulldog: 11.0~14.4</div>
+                  </li>
+                  <li class="basic-list__item">
+                    <div class="basic-list__symbol">-</div>
+                    <div class="basic-list__contents">Boston terrier: 10.3~13.1</div>
+                  </li>
+                  <li class="basic-list__item">
+                    <div class="basic-list__symbol">-</div>
+                    <div class="basic-list__contents">Labrado retriever: 10.2~11.4</div>
+                  </li>
+                  <li class="basic-list__item">
+                    <div class="basic-list__symbol">-</div>
+                    <div class="basic-list__contents">Pug: 9.8~11.6</div>
+                  </li>
+                  <li class="basic-list__item">
+                    <div class="basic-list__symbol">-</div>
+                    <div class="basic-list__contents">Pomeranian: 9.6~11.4</div>
+                  </li>
+                  <li class="basic-list__item">
+                    <div class="basic-list__symbol">-</div>
+                    <div class="basic-list__contents">Whipper: 10.5~11.8</div>
+                  </li>
+                </ul>
+              </section>
+              <!-- //2022.07.29 : mod : 항목 구성 케이스 추가 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //DD : Vue로 데이터 로드 되는거라면 이 영역이 뿌려진 후 uiJSCommon(); 호출해주세요. (엑스레이 포지션 값 관련) -->
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <!-- //script -->
+  </body>
+</html>

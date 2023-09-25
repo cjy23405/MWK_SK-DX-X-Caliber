@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic_download_s" transform="translate(-1.316 -.96)">
+        <path id="사각형_8749" data-name="사각형 8749" transform="translate(1.316 .96)" style="fill:none" d="M0 0h16v16H0z"/>
+        <path id="패스_3122" data-name="패스 3122" class="cls-2" d="M.2 11.436v3h12v-3" transform="translate(3.119 -.475)"/>
+        <rect id="사각형_9518" data-name="사각형 9518" width="2" height="8" rx="1" transform="translate(8.315 1.961)" style="fill:#fff"/>
+        <path id="패스_3123" data-name="패스 3123" class="cls-2" d="m5.315 7.961 3 3 3-3" transform="translate(1 -1)"/>
+    </g>
+</svg>

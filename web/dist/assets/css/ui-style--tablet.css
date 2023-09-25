@@ -1,0 +1,517 @@
+@media only screen and (max-width: 1260px) {
+  /* script style */
+  html {
+    outline-color: rgba(0, 0, 1, 0);
+  }
+
+  /* form-flex--search */
+  .form-flex--search {
+    display: block;
+  }
+  .form-flex--search > .form-flex-cell + .form-flex-cell {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  /* form-flex--section */
+  .form-flex--section {
+    display: block;
+  }
+  .form-flex--section > .form-flex-cell + .form-flex-cell {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  /* header */
+  .header__inner {
+    width: auto;
+    padding: 0 24px;
+  }
+  .header__logo {
+    width: 103px;
+    height: 56px;
+    margin-bottom: -1px;
+  }
+  .header-gnb {
+    display: none;
+  }
+  .header .header-etc__list {
+    display: none;
+  }
+  .header-lang {
+    margin: 18px 0 17px;
+  }
+  .header-lang__text {
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+  }
+  .header-lang__opener::after {
+    border-radius: 100%;
+    width: 100%;
+    padding: 6px;
+    top: -6px;
+    right: -6px;
+    background: rgba(255, 255, 255, 0.12);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  .header-lang.js-dropdown-opened .header-lang__opener::after {
+    opacity: 1;
+  }
+  .header-lang__layer {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .header-lang__contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .header-menu {
+    display: block;
+  }
+
+  /* footer */
+  .footer__inner {
+    padding: 60px 0 20px;
+  }
+  .footer__etc-nav {
+    margin-bottom: 20px;
+  }
+  .footer__copyright {
+    margin-top: 10px;
+  }
+
+  /* footer-nav */
+  .footer-nav__inner {
+    width: auto;
+    padding: 59px 48px 60px;
+  }
+  .footer-nav__list {
+    float: none;
+  }
+  .footer-nav__item {
+    width: 20%;
+  }
+  .footer-nav__call {
+    float: none;
+    text-align: left;
+    margin-top: 60px;
+  }
+
+  /* page-contents */
+  .page-contents {
+    padding: 80px 24px;
+  }
+
+  /* contents-width */
+  .contents-width {
+    width: auto;
+  }
+
+  /* sign-wrap */
+  .sign-wrap {
+    width: auto;
+  }
+
+  /* box-check--sixth */
+  .box-check--sixth .box-check__item {
+    width: 33.333333%;
+  }
+
+  /* info-list--report */
+  .info-list--report {
+    display: block;
+    padding: 28px 88px;
+  }
+  .info-list--report::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .info-list--report .info-list__item {
+    float: left;
+    width: 50%;
+  }
+  .info-list--report .info-list__item + .info-list__item + .info-list__item {
+    margin-top: 30px;
+  }
+
+  /* plans */
+  .plans__list {
+    display: block;
+  }
+  .plans__item {
+    width: 50%;
+  }
+  .plans__item:only-child {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .plans__block {
+    width: auto;
+  }
+
+  /* line-tab */
+  .line-tab {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  .line-tab__list {
+    width: auto;
+  }
+
+  /* service-cards */
+  .service-cards {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .service-cards .swiper-button-prev {
+    left: 0;
+  }
+  .service-cards .swiper-button-next {
+    right: 0;
+  }
+
+  /* search-form */
+  .search-form__radio-tab {
+    width: auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+  }
+  .search-form__name {
+    width: auto;
+  }
+
+  /* bills */
+  .bills__head-cell {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .bills__head-cell:first-child {
+    padding-left: 16px;
+  }
+  .bills__head-cell:last-child {
+    padding-right: 16px;
+  }
+  .bills__link {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .bills__cell {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .bills__cell:first-child {
+    padding-left: 16px;
+  }
+  .bills__cell:last-child {
+    padding-right: 16px;
+  }
+  .bills__head-cell--date,
+  .bills__cell--date {
+    width: 150px;
+  }
+  .bills__head-cell--uses,
+  .bills__cell--uses {
+    width: 160px;
+  }
+  .bills__head-cell--date-auto:first-child,
+  .bills__cell--date-auto:first-child {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .bills__head-cell--uses-auto:last-child,
+  .bills__cell--uses-auto:last-child {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .bills__head-cell--date-billing,
+  .bills__cell--date-billing {
+    width: 120px;
+  }
+  .bills__head-cell--period,
+  .bills__cell--period {
+    width: 200px;
+  }
+  .bills__head-cell--amount,
+  .bills__cell--amount {
+    width: 130px;
+  }
+  .bills__head-cell--auth,
+  .bills__cell--auth {
+    width: 200px;
+  }
+  .bills__head-cell--actions,
+  .bills__cell--actions {
+    width: 56px;
+  }
+  .bills__head-cell--date-reg,
+  .bills__cell--date-reg {
+    width: 270px;
+  }
+  .bills__head-cell--status,
+  .bills__cell--status {
+    width: 100px;
+  }
+  .bills__head-cell--date-payment,
+  .bills__cell--date-payment {
+    width: 10%;
+  }
+  .bills__head-cell--payment-type,
+  .bills__cell--payment-type {
+    width: 10%;
+  }
+  .bills__head-cell--payment-approval-number,
+  .bills__cell--payment-approval-number {
+    width: 12%;
+  }
+  .bills__head-cell--payment-service,
+  .bills__cell--payment-service {
+    width: 12%;
+  }
+  .bills__head-cell--payment-plan,
+  .bills__cell--payment-plan {
+    width: 12%;
+  }
+  .bills__head-cell--payment-period,
+  .bills__cell--payment-period {
+    width: 16%;
+  }
+  .bills__head-cell--payment-amount,
+  .bills__cell--payment-amount {
+    width: 16%;
+  }
+  .bills__head-cell--type,
+  .bills__cell--type {
+    width: 100px;
+  }
+  .bills__head-cell--reg-date,
+  .bills__cell--reg-date {
+    width: 105px;
+  }
+  .bills__head-cell--answer-status,
+  .bills__cell--answer-status {
+    width: 190px;
+  }
+  .bills__cell--date-notice {
+    width: 130px;
+  }
+
+  /* bills__block--notice */
+  .bills__block--notice {
+    padding-right: 46px;
+  }
+  .bills__block--notice::before {
+    right: 30px;
+  }
+  .bills__block--notice .bills__cell:first-child {
+    padding-left: 30px;
+  }
+  .bills__block--notice .bills__cell:last-child {
+    padding-right: 30px;
+  }
+
+  /* console-report-view */
+  .console-report-view__item {
+    border-width: 1px;
+  }
+
+  /* home-top */
+  .home-top {
+    padding: 120px 60px;
+    background-image: url('../images/background/home-top--tablet.jpg');
+  }
+  .home-top__big-text {
+    font-size: 36px;
+    line-height: 56px;
+  }
+  .home-top__form {
+    margin-top: 60px;
+    width: auto;
+    padding-bottom: 45px;
+  }
+
+  /* home-slide */
+  .home-slide__img--pc {
+    display: none;
+  }
+  .home-slide__img--tablet {
+    display: block;
+  }
+  .home-slide .swiper-pagination-fraction {
+    bottom: 117px;
+  }
+  .home-slide .swiper-scrollbar {
+    bottom: 123px;
+  }
+
+  /* home-section */
+  .home-section {
+    padding: 90px 60px;
+  }
+  .home-section__head {
+    margin-bottom: 60px;
+  }
+  .home-section__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .home-section__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  /* home-section--subscription */
+  .home-section--subscription .home-section__title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .home-section--subscription .service-cards {
+    margin-left: -36px;
+    margin-right: -36px;
+  }
+
+  /* home-service */
+  .home-service__list {
+    height: 660px;
+    margin-left: -20px;
+  }
+  .home-service__item {
+    padding-left: 20px;
+  }
+  .home-service__block {
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .home-service__block::before {
+    right: 30px;
+    bottom: 40px;
+  }
+  .home-service__title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .home-service__text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .home-service__link::before {
+    top: 30px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+  }
+  .home-service__soon {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 9px 14px 8px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .home-service__item:nth-child(1) .home-service__block {
+    height: 528px;
+  }
+  .home-service__item:nth-child(1) .home-service__block::before {
+    width: 148px;
+    height: 148px;
+  }
+  .home-service__item:nth-child(1) .home-service__title {
+    padding-right: 40px;
+  }
+  .home-service__item:nth-child(2) .home-service__block::before {
+    width: 75px;
+    height: 95px;
+    bottom: 20px;
+  }
+  .home-service__item:nth-child(3) .home-service__block {
+    height: 112px;
+    padding-top: 40px;
+  }
+  .home-service__item:nth-child(3) .home-service__link::before {
+    top: 40px;
+  }
+  .home-service__item:nth-child(4) .home-service__block::before {
+    width: 75px;
+    height: 100px;
+    bottom: 20px;
+  }
+
+  /* home-catalog */
+  .home-catalog__section {
+    float: none;
+    width: auto;
+    height: auto;
+    min-height: 890px;
+    padding: 120px 60px 360px;
+  }
+  .home-catalog__section::before {
+    right: 60px;
+    bottom: 60px;
+  }
+  .home-catalog__title {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .home-catalog__section:nth-child(1) {
+    background-image: url('../images/background/home-catalog-1--tablet.svg');
+  }
+  .home-catalog__section:nth-child(2) {
+    background-image: url('../images/background/home-catalog-2--tablet.svg');
+  }
+
+  /* #################### page style #################### */
+
+  /* page-contents--home */
+  .page-contents--home {
+    padding: 0;
+  }
+
+  /* page-contents--unsubscribe */
+  .page-contents--unsubscribe .bills__head-cell--period,
+  .page-contents--unsubscribe .bills__cell--period {
+    width: 200px;
+  }
+  .page-contents--unsubscribe .bills__head-cell--amount,
+  .page-contents--unsubscribe .bills__cell--amount {
+    width: 175px;
+  }
+
+  /* page-contents--change-plan-settlement */
+  .page-contents--change-plan-settlement .bills__head-cell--amount,
+  .page-contents--change-plan-settlement .bills__cell--amount {
+    width: 175px;
+  }
+
+  /* page-contents--console */
+  .page-contents--console .ui-buttons:not(.file-upload-section__buttons) {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .page-contents--console .ui-buttons:not(.file-upload-section__buttons) .ui-buttons__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  /* #################### layer style #################### */
+
+  /* layer-clause */
+  .layer-clause .ui-layer {
+    width: 708px;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-select-pg">PG 선택</a>
+
+    <!-- layer: PG 선택 -->
+    <div class="layer-wrap layer-wrap--primary layer-select-pg" data-layer="layer-select-pg">
+      <div class="layer-container">
+        <section class="ui-layer">
+          <div class="ui-layer__head">
+            <div class="ui-layer-header">
+              <div class="ui-layer-header__right">
+                <button type="button" class="ui-button ui-layer-header__btn ui-layer-header__btn--close" data-role="layerClose">
+                  <span class="for-a11y">close</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="sign-head">
+                <!-- 2021.11.01 : mod : 문구 수정 -->
+                <h2 class="sign-head__title">Select a <span class="inline-block">Payment method</span></h2>
+                <!-- //2021.11.01 : mod : 문구 수정 -->
+                <p class="sign-head__text">
+                  Select the information <span class="inline-block">below to register</span><br />
+                  your payment card.
+                </p>
+              </div>
+
+              <div class="pg-select">
+                <ul class="pg-select__list">
+                  <li class="pg-select__item pg-select__item--skpay">
+                    <a href="" class="pg-select__block">
+                      <div class="pg-select__logo">
+                        <span class="for-a11y">SK Pay</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="pg-select__item pg-select__item--kginicis">
+                    <a href="" class="pg-select__block">
+                      <div class="pg-select__logo">
+                        <span class="for-a11y">KG Inicis</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: PG 선택 -->
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다.
+      $(function () {
+        uiJSLayer.open('layer-select-pg');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

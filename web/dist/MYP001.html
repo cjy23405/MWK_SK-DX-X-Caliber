@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X Caliber</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/rangeslider.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--tablet.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style--mobile.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="layout-wrap">
+        <!-- fix top area -->
+        <div class="fix-top-wrap">
+          <!-- header -->
+          <header class="header">
+            <div class="header__inner">
+              <h1 class="header__logo">
+                <a href="" class="header__logo-link">
+                  <span class="for-a11y">X Caliber</span>
+                </a>
+              </h1>
+
+              <div class="header-gnb">
+                <ul class="header-gnb__list">
+                  <li class="header-gnb__item">
+                    <a href="" class="header-gnb__link">Service</a>
+                    <div class="header-gnb__depth">
+                      <ul class="header-gnb__depth-list">
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">Veterinary</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-gnb__item">
+                    <a href="" class="header-gnb__link">Device</a>
+                  </li>
+                  <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                  <li class="header-gnb__item is-active">
+                    <a href="" class="header-gnb__link">Support</a>
+                    <div class="header-gnb__depth">
+                      <ul class="header-gnb__depth-list">
+                        <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                        <li class="header-gnb__depth-item is-active">
+                          <a href="" class="header-gnb__depth-link">Notice</a>
+                        </li>
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">FAQ</a>
+                        </li>
+                        <li class="header-gnb__depth-item">
+                          <a href="" class="header-gnb__depth-link">Help</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="header-etc">
+                <ul class="header-etc__list">
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button header-etc__button--console">Console</a>
+                  </li>
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button">Sign in</a>
+                  </li>
+                </ul>
+
+                <div class="header-lang js-ui-dropdown">
+                  <div class="header-lang__head">
+                    <span class="header-lang__text">ENG</span>
+                    <button type="button" class="ui-button header-lang__opener js-ui-dropdown__opener">
+                      <span class="for-a11y">
+                        change language
+                        <span class="open-text">open</span>
+                        <span class="close-text">close</span>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="header-lang__layer js-ui-dropdown__layer">
+                    <div class="header-lang__contents">
+                      <ul class="header-lang__list">
+                        <li class="header-lang__item">
+                          <a href="" class="header-lang__link">ENG</a>
+                        </li>
+                        <li class="header-lang__item">
+                          <a href="" class="header-lang__link">KOR</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="ui-button header-menu" data-layer-open="layer-gnb">
+                  <span class="for-a11y">Global Navigation Bar Open</span>
+                </button>
+              </div>
+            </div>
+          </header>
+          <!-- //header -->
+        </div>
+        <!-- //fix top area -->
+
+        <!-- layer: GNB -->
+        <div class="layer-wrap layer-gnb" data-layer="layer-gnb">
+          <div class="layer-container">
+            <nav class="gnb">
+              <div class="gnb__head">
+                <h2 class="for-a11y">Global Navigation Bar</h2>
+                <div class="gnb__logo">
+                  <a href="" class="gnb__logo-link">
+                    <span class="for-a11y">X Caliber</span>
+                  </a>
+                </div>
+                <button type="button" class="ui-button gnb__close" data-role="layerClose">
+                  <span class="for-a11y">close</span>
+                </button>
+              </div>
+
+              <div class="gnb__body">
+                <div class="gnb__body-inner">
+                  <ul class="gnb__list">
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Service</a>
+                        <button type="button" class="ui-button gnb__opener">
+                          <span class="for-a11y">
+                            Submenu
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="gnb__depth">
+                        <ul class="gnb__depth-list">
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">Veterinary</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Device</a>
+                      </div>
+                    </li>
+                    <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                    <li class="gnb__item is-active">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Support</a>
+                        <button type="button" class="ui-button gnb__opener">
+                          <span class="for-a11y">
+                            Submenu
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="gnb__depth">
+                        <ul class="gnb__depth-list">
+                          <!-- DD : 해당 페이지면 is-active 클래스 값 추가 -->
+                          <li class="gnb__depth-item is-active">
+                            <a href="" class="gnb__depth-link">Notice</a>
+                          </li>
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">FAQ</a>
+                          </li>
+                          <li class="gnb__depth-item">
+                            <a href="" class="gnb__depth-link">Help</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">My Page</a>
+                      </div>
+                    </li>
+                    <li class="gnb__item">
+                      <div class="gnb__item-head">
+                        <a href="" class="gnb__link">Console</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="gnb__foot">
+                <ul class="header-etc__list">
+                  <li class="header-etc__item">
+                    <a href="" class="header-etc__button">Sign in</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- //layer: GNB -->
+
+        <div class="contents-wrap">
+          <div class="page-contents page-contents--my-page-main">
+            <section class="sign-wrap">
+              <div class="sign-head">
+                <h2 class="sign-head__top-title">My Page</h2>
+                <h3 class="sign-head__title">Hello, James Kim</h3>
+              </div>
+
+              <section class="form-section">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">Member Info</h4>
+                </div>
+
+                <div class="product-card">
+                  <p class="product-card__title">Jiguchon hospital</p>
+                  <p class="product-card__text">0265678987</p>
+                  <a href="" class="ui-basic-button ui-basic-button--secondary product-card__button">Setting</a>
+                </div>
+
+                <div class="info-group">
+                  <div class="info-list">
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">ID</dt>
+                      <dd class="info-list__val">gildong.h@gmail.com</dd>
+                    </dl>
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Password</dt>
+                      <dd class="info-list__val">
+                        ************<br />
+                        <a href="" class="arrow-link">Change Password</a>
+                      </dd>
+                    </dl>
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Cell Phone</dt>
+                      <dd class="info-list__val">
+                        +82 10-1234-1234<br />
+                        <a href="" class="arrow-link">Change Number</a>
+                      </dd>
+                    </dl>
+                    <!-- 2022.08.19 : add : 면허번호, 소속 항목 추가 -->
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">면허번호</dt>
+                      <dd class="info-list__val">
+                        0123456789<br />
+                        <a href="" class="arrow-link">면허번호 변경</a>
+                      </dd>
+                    </dl>
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">소속</dt>
+                      <dd class="info-list__val">
+                        text text text text<br />
+                        <a href="" class="arrow-link">소속 변경</a>
+                      </dd>
+                    </dl>
+                    <!-- //2022.08.19 : add : 면허번호, 소속 항목 추가 -->
+                  </div>
+                  <div class="info-list">
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Credit card</dt>
+                      <dd class="info-list__val">
+                        **** **** **** 0398<br />
+                        <a href="" class="arrow-link">Manage Card</a>
+                      </dd>
+                    </dl>
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Payment history</dt>
+                      <dd class="info-list__val">
+                        <a href="" class="arrow-link">View</a>
+                      </dd>
+                    </dl>
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Unpaid history</dt>
+                      <dd class="info-list__val">
+                        <a href="" class="arrow-link">View</a>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="info-list">
+                    <dl class="info-list__item">
+                      <dt class="info-list__key">Business Membership</dt>
+                      <dd class="info-list__val">
+                        <a href="" class="arrow-link">Apply</a>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </section>
+
+              <section class="form-section">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">Subscrition</h4>
+                </div>
+
+                <!-- Case : 데이터 없음 -->
+                <div class="billing-empty">
+                  <div class="billing-empty__text">No services are being subscribed</div>
+                </div>
+                <!-- //Case : 데이터 없음 -->
+
+                <!-- Case : 데이터 있음 -->
+                <div class="billing-info">
+                  <ul class="billing-info__list js-ui-accordion">
+                    <li class="billing-info__item js-ui-accordion__item">
+                      <div class="billing-info__head">
+                        <div class="billing-info__cell">
+                          <div class="billing-info__title">Dog X-RAY</div>
+                          <div class="billing-info__discription">Dog x-ray 300</div>
+                        </div>
+                        <!-- 2021.12.24 : add : 구독중 상태 표시 추가 -->
+                        <div class="billing-info__right">
+                          <div class="basic-text basic-text--regular color-blue font-weight-semi-bold">Subscribing</div>
+                        </div>
+                        <!-- //2021.12.24 : add : 구독중 상태 표시 추가 -->
+                        <button type="button" class="ui-button billing-info__opener js-ui-accordion__opener">
+                          <span class="for-a11y">
+                            detail
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="billing-info__layer js-ui-accordion__layer">
+                        <div class="billing-info__contents billing-info__contents--my-page-main">
+                          <!-- 2021.12.02 : mod : <div class="box-link__text"> 태그 추가 -->
+                          <a href="" class="box-link box-link--notice">
+                            <div class="box-link__text">Service Stopped (Unpaid occurred)</div>
+                          </a>
+                          <!-- //2021.12.02 : mod : <div class="box-link__text"> 태그 추가 -->
+
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Usage History</dt>
+                            <dd class="info-list__val">
+                              <a href="" class="arrow-link">View</a>
+                            </dd>
+                          </dl>
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Credit card</dt>
+                            <dd class="info-list__val">
+                              **** **** **** 0398<br />
+                              <a href="" class="arrow-link">Manage Card</a>
+                            </dd>
+                          </dl>
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Next payment date</dt>
+                            <dd class="info-list__val">2021.8.7</dd>
+                          </dl>
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Recent billing date</dt>
+                            <dd class="info-list__val">
+                              2021.8.1<br />
+                              <a href="" class="arrow-link">View</a>
+                            </dd>
+                          </dl>
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Members in use</dt>
+                            <dd class="info-list__val">
+                              10<br />
+                              <a href="" class="arrow-link">User Management</a>
+                            </dd>
+                          </dl>
+
+                          <div class="ui-hr"></div>
+
+                          <div class="billing-plan">
+                            <div class="billing-plan__cell">
+                              <div class="billing-plan__price">
+                                <strong class="billing-plan__price-cost">100</strong>
+                                <strong class="billing-plan__price-unit">won</strong>
+                                <span class="billing-plan__price-suffix">/ case</span>
+                              </div>
+                              <div class="billing-plan__discription">
+                                Pay-as-you-go (Pay as much as you used.)<br />
+                                Deferred payment
+                              </div>
+                            </div>
+                            <div class="billing-plan__right">
+                              <a href="" class="arrow-link display-block">Change Plan</a>
+                            </div>
+                          </div>
+
+                          <a href="" class="ui-basic-button">Go to Console</a>
+
+                          <div class="settings settings--line">
+                            <ul class="settings__list">
+                              <li class="settings__item">
+                                <a href="" class="settings__block settings__block--link">
+                                  <div class="settings__text">Provide Third-Party Information</div>
+                                </a>
+                              </li>
+                              <li class="settings__item">
+                                <a href="" class="settings__block settings__block--link">
+                                  <div class="settings__text">Product Terms and Conditions</div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="billing-info__link">
+                            <a href="" class="basic-link basic-text--regular color-gray font-weight-semi-bold">Unsubscribe</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="billing-info__item js-ui-accordion__item">
+                      <div class="billing-info__head">
+                        <div class="billing-info__cell">
+                          <div class="billing-info__title">CT PET AI</div>
+                          <div class="billing-info__discription">CT image analysis 2000</div>
+                        </div>
+                        <!-- 2021.12.24 : add : 구독해지 상태 표시 추가 -->
+                        <div class="billing-info__right">
+                          <div class="basic-text basic-text--regular color-gray font-weight-semi-bold">Unsubscribed</div>
+                        </div>
+                        <!-- //2021.12.24 : add : 구독해지 상태 표시 추가 -->
+                        <button type="button" class="ui-button billing-info__opener js-ui-accordion__opener">
+                          <span class="for-a11y">
+                            detail
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="billing-info__layer js-ui-accordion__layer">
+                        <div class="billing-info__contents billing-info__contents--my-page-main">
+                          <!-- 2021.12.02 : add : 경우의 수 추가 -->
+                          <div class="box-link box-link--notice box-link--use-button">
+                            <div class="box-link__text">Service Stopped (Payment failed)</div>
+                            <a href="" class="ui-basic-button ui-basic-button--quinary ui-basic-button--small">Pay now</a>
+                          </div>
+                          <!-- //2021.12.02 : add : 경우의 수 추가 -->
+
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Usage History</dt>
+                            <dd class="info-list__val">
+                              <a href="" class="arrow-link">View</a>
+                            </dd>
+                          </dl>
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Credit card</dt>
+                            <dd class="info-list__val">
+                              **** **** **** 0398<br />
+                              <a href="" class="arrow-link">Manage Card</a>
+                            </dd>
+                          </dl>
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Next payment date</dt>
+                            <dd class="info-list__val">2021.8.7</dd>
+                          </dl>
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Recent billing date</dt>
+                            <dd class="info-list__val">
+                              2021.8.1<br />
+                              <a href="" class="arrow-link">View</a>
+                            </dd>
+                          </dl>
+                          <dl class="info-list__item">
+                            <dt class="info-list__key">Members in use</dt>
+                            <dd class="info-list__val">
+                              10<br />
+                              <a href="" class="arrow-link">User Management</a>
+                            </dd>
+                          </dl>
+
+                          <div class="ui-hr"></div>
+
+                          <div class="billing-plan">
+                            <div class="billing-plan__cell">
+                              <div class="billing-plan__price">
+                                <strong class="billing-plan__price-cost">100</strong>
+                                <strong class="billing-plan__price-unit">won</strong>
+                                <span class="billing-plan__price-suffix">/ case</span>
+                              </div>
+                              <div class="billing-plan__discription">
+                                Pay-as-you-go (Pay as much as you used.)<br />
+                                Deferred payment
+                              </div>
+                            </div>
+                            <div class="billing-plan__right">
+                              <a href="" class="arrow-link display-block">Change Plan</a>
+                            </div>
+                          </div>
+
+                          <a href="" class="ui-basic-button">Go to Console</a>
+
+                          <div class="settings settings--line">
+                            <ul class="settings__list">
+                              <li class="settings__item">
+                                <a href="" class="settings__block settings__block--link">
+                                  <div class="settings__text">Provide Third-Party Information</div>
+                                </a>
+                              </li>
+                              <li class="settings__item">
+                                <a href="" class="settings__block settings__block--link">
+                                  <div class="settings__text">Product Terms and Conditions</div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="billing-info__link">
+                            <a href="" class="basic-link basic-text--regular color-gray font-weight-semi-bold">Unsubscribe</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="billing-info__item">
+                      <div class="billing-info__head">
+                        <div class="billing-info__cell">
+                          <div class="billing-info__title">For My Cat</div>
+                          <div class="billing-info__discription">My cat x-ray 2020</div>
+                        </div>
+                        <div class="billing-info__right">
+                          <div class="basic-text basic-text--regular color-sky font-weight-semi-bold">Under subscription review</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="billing-info__item">
+                      <div class="billing-info__head">
+                        <div class="billing-info__cell">
+                          <div class="billing-info__title">For My Cat</div>
+                          <div class="billing-info__discription">My cat x-ray 2020</div>
+                        </div>
+                        <div class="billing-info__right">
+                          <div class="billing-info__head-link">
+                            <a href="" class="arrow-link arrow-link--red">Subscription rejected</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- //Case : 데이터 있음 -->
+              </section>
+
+              <section class="form-section">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">My inquiry</h4>
+                </div>
+
+                <!-- Case : 데이터 없음 -->
+                <div class="billing-empty billing-empty--inquiry">
+                  <div class="billing-empty__text">There is no history of questions</div>
+                </div>
+                <!-- //Case : 데이터 없음 -->
+
+                <!-- Case : 데이터 있음 -->
+                <div class="settings">
+                  <ul class="settings__list">
+                    <li class="settings__item">
+                      <div class="settings__block settings__block--large">
+                        <div class="settings__text"><span class="color-primary">Recent : Question Detail Question Detail…</span></div>
+                        <div class="settings__right">
+                          <a href="" class="arrow-link display-block">View All</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- //Case : 데이터 있음 -->
+              </section>
+
+              <section class="form-section">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">Local Device</h4>
+                </div>
+
+                <div class="settings">
+                  <ul class="settings__list">
+                    <li class="settings__item">
+                      <div class="settings__block settings__block--large">
+                        <div class="settings__text">Use it if you need to set up a local device.</div>
+                        <div class="settings__right">
+                          <a href="" class="arrow-link display-block">Setting</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="form-section">
+                <div class="form-section__head">
+                  <h4 class="form-section__title">Terms & Conditions</h4>
+                </div>
+
+                <div class="settings">
+                  <ul class="settings__list">
+                    <li class="settings__item">
+                      <a href="" class="settings__block settings__block--link">
+                        <div class="settings__text">Terms of Service</div>
+                      </a>
+                    </li>
+                    <li class="settings__item">
+                      <a href="" class="settings__block settings__block--link">
+                        <div class="settings__text">Privacy Policy</div>
+                      </a>
+                    </li>
+                    <li class="settings__item">
+                      <a href="" class="settings__block settings__block--link">
+                        <div class="settings__text">Provide Third-Party Information</div>
+                      </a>
+                    </li>
+                    <li class="settings__item">
+                      <div class="settings__block">
+                        <div class="settings__text">Agree to Receive Marketing Information</div>
+                        <div class="settings__right">
+                          <div class="ui-switch-block">
+                            <input type="checkbox" class="ui-checkbox" id="agree4" title="Agree" />
+                            <label for="agree4" class="ui-label">
+                              <span class="ui-switch-object"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <!-- 2021.10.15 : add : 로그아웃 버튼 추가 -->
+              <div class="ui-buttons ui-buttons--right">
+                <ul class="ui-buttons__list">
+                  <!-- 2021.12.14 : add : 회원탈퇴 버튼 추가 -->
+                  <li class="ui-buttons__item ui-buttons__item--flexible basic-text basic-text--regular">
+                    <a href="" class="basic-link font-weight-semi-bold color-gray">Membership Cancellation</a>
+                  </li>
+                  <!-- //2021.12.14 : add : 회원탈퇴 버튼 추가 -->
+                  <li class="ui-buttons__item">
+                    <a href="" class="ui-basic-button ui-basic-button--quaternary">Sign Out</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- //2021.10.15 : add : 로그아웃 버튼 추가 -->
+            </section>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+          <nav class="footer-nav">
+            <div class="footer-nav__inner">
+              <h2 class="for-a11y">Footer Navigation Bar</h2>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Service</a>
+                  <ul class="footer-nav__depth-list">
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Veterinary</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Device</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Support</a>
+                  <ul class="footer-nav__depth-list">
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Notice</a>
+                    </li>
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">FAQ</a>
+                    </li>
+                    <li class="footer-nav__depth-item">
+                      <a href="" class="footer-nav__depth-link">Help</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">My Page</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="" class="footer-nav__link">Console</a>
+                </li>
+              </ul>
+              <div class="footer-nav__call">
+                <p class="footer-nav__call-text">Do you have any questions?</p>
+                <a href="" class="footer-nav__call-link">Call us</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="footer__inner">
+            <ul class="footer__etc-nav">
+              <li class="footer__etc-nav-item">
+                <a href="" class="footer__etc-nav-link">Terms and Conditions</a>
+              </li>
+              <li class="footer__etc-nav-item">
+                <a href="" class="footer__etc-nav-link">Privacy Policy</a>
+              </li>
+            </ul>
+            <!-- 2021.12.17 : mod : 대소문자 수정 -->
+            <h1 class="footer__title">SK telecom</h1>
+            <!-- //2021.12.17 : mod : 대소문자 수정 -->
+            <address class="footer__address">
+              04539 65, Eulji-ro, Jung-gu, Seoul, Republic of Korea, <span class="inline-block">CEO Jung-ho, Park</span>
+            </address>
+            <!-- 2021.12.14 : add : 푸터 버튼 추가 -->
+            <div class="ui-buttons ui-buttons--center">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <a href="tel:02-6272-7582" class="ui-basic-button ui-basic-button--small ui-basic-button--quaternary">02-6272-7582</a>
+                </li>
+                <li class="ui-buttons__item">
+                  <a href="mailto:xcaliber@sktelecom.com" class="ui-basic-button ui-basic-button--small ui-basic-button--quaternary"
+                    >xcaliber@sktelecom.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- //2021.12.14 : add : 푸터 버튼 추가 -->
+            <p class="footer__copyright">Copyright SK Corp. All Right Reserved.</p>
+          </div>
+        </footer>
+        <!-- //footer -->
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <!-- //script -->
+  </body>
+</html>
